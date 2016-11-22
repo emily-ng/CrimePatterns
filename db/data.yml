@@ -1,0 +1,4467 @@
+
+---
+arrests_by_state_2005:
+  columns:
+  - state
+  - age
+  - total_all
+  - violent_crime
+  - property_crime
+  - drug_abuse_violations
+  records: 
+  - - Alabama
+    - Total all ages
+    - 178684
+    - 5357
+    - 17455
+    - 15704
+  - - Alabama
+    - Under 18
+    - 11484
+    - 461
+    - 2561
+    - 1034
+  - - Alaska
+    - Total all ages
+    - 37227
+    - 1721
+    - 4271
+    - 1885
+  - - Alaska
+    - Under 18
+    - 4532
+    - 205
+    - 1359
+    - 335
+  - - Arizona
+    - Total all ages
+    - 302339
+    - 8459
+    - 38498
+    - 35722
+  - - Arizona
+    - Under 18
+    - 50371
+    - 1548
+    - 10416
+    - 5304
+  - - Arkansas
+    - Total all ages
+    - 142878
+    - 4698
+    - 13871
+    - 12009
+  - - Arkansas
+    - Under 18
+    - 12380
+    - 477
+    - 3054
+    - 980
+  - - California
+    - Total all ages
+    - 1506819
+    - 122875
+    - 173561
+    - 305745
+  - - California
+    - Under 18
+    - 217158
+    - 15266
+    - 45337
+    - 21791
+  - - Colorado
+    - Total all ages
+    - 249404
+    - 6336
+    - 29857
+    - 19743
+  - - Colorado
+    - Under 18
+    - 46030
+    - 1059
+    - 8911
+    - 3747
+  - - Connecticut
+    - Total all ages
+    - 122966
+    - 5297
+    - 16034
+    - 14480
+  - - Connecticut
+    - Under 18
+    - 20811
+    - 1071
+    - 3878
+    - 1842
+  - - Delaware
+    - Total all ages
+    - 37332
+    - 2421
+    - 4984
+    - 5018
+  - - Delaware
+    - Under 18
+    - 7449
+    - 517
+    - 1398
+    - 751
+  - - Florida
+    - Total all ages
+    - 1055052
+    - 50929
+    - 122426
+    - 160595
+  - - Florida
+    - Under 18
+    - 120082
+    - 8660
+    - 33503
+    - 14065
+  - - Georgia
+    - Total all ages
+    - 216627
+    - 9493
+    - 24021
+    - 29513
+  - - Georgia
+    - Under 18
+    - 28429
+    - 1316
+    - 5478
+    - 2502
+  - - Hawaii
+    - Total all ages
+    - 43632
+    - 994
+    - 4599
+    - 2132
+  - - Hawaii
+    - Under 18
+    - 8261
+    - 232
+    - 1243
+    - 335
+  - - Idaho
+    - Total all ages
+    - 44193
+    - 924
+    - 4617
+    - 3231
+  - - Idaho
+    - Under 18
+    - 9864
+    - 170
+    - 2001
+    - 568
+  - - Illinois
+    - Total all ages
+    - 196878
+    - 9694
+    - 24849
+    - 58093
+  - - Illinois
+    - Under 18
+    - 37470
+    - 3565
+    - 6141
+    - 8514
+  - - Indiana
+    - Total all ages
+    - 229883
+    - 11428
+    - 26128
+    - 24698
+  - - Indiana
+    - Under 18
+    - 34293
+    - 1589
+    - 7013
+    - 2502
+  - - Iowa
+    - Total all ages
+    - 116089
+    - 4385
+    - 13643
+    - 9740
+  - - Iowa
+    - Under 18
+    - 19926
+    - 802
+    - 5205
+    - 1151
+  - - Kansas
+    - Total all ages
+    - 48182
+    - 1073
+    - 3705
+    - 4569
+  - - Kansas
+    - Under 18
+    - 6555
+    - 177
+    - 1069
+    - 568
+  - - Kentucky
+    - Total all ages
+    - 210113
+    - 4493
+    - 17367
+    - 35313
+  - - Kentucky
+    - Under 18
+    - 13857
+    - 595
+    - 3137
+    - 1988
+  - - Louisiana
+    - Total all ages
+    - 163410
+    - 7326
+    - 19824
+    - 22323
+  - - Louisiana
+    - Under 18
+    - 23806
+    - 1052
+    - 4575
+    - 1841
+  - - Maine
+    - Total all ages
+    - 49931
+    - 723
+    - 6553
+    - 4730
+  - - Maine
+    - Under 18
+    - 7112
+    - 109
+    - 2052
+    - 582
+  - - Maryland
+    - Total all ages
+    - 302456
+    - 11827
+    - 34741
+    - 52472
+  - - Maryland
+    - Under 18
+    - 49297
+    - 3187
+    - 11636
+    - 7666
+  - - Massachusetts
+    - Total all ages
+    - 112437
+    - 7109
+    - 12077
+    - 14496
+  - - Massachusetts
+    - Under 18
+    - 14841
+    - 1329
+    - 2545
+    - 1785
+  - - Michigan
+    - Total all ages
+    - 344114
+    - 14852
+    - 37023
+    - 33492
+  - - Michigan
+    - Under 18
+    - 45934
+    - 2396
+    - 11472
+    - 3792
+  - - Minnesota
+    - Total all ages
+    - 204004
+    - 6168
+    - 25385
+    - 20001
+  - - Minnesota
+    - Under 18
+    - 46818
+    - 1279
+    - 8649
+    - 3064
+  - - Mississippi
+    - Total all ages
+    - 101737
+    - 2107
+    - 9299
+    - 13953
+  - - Mississippi
+    - Under 18
+    - 11372
+    - 164
+    - 2214
+    - 912
+  - - Missouri
+    - Total all ages
+    - 229077
+    - 11029
+    - 26797
+    - 29685
+  - - Missouri
+    - Under 18
+    - 26874
+    - 1440
+    - 5477
+    - 2526
+  - - Montana
+    - Total all ages
+    - 25130
+    - 773
+    - 4177
+    - 1662
+  - - Montana
+    - Under 18
+    - 6493
+    - 111
+    - 1683
+    - 356
+  - - Nebraska
+    - Total all ages
+    - 95377
+    - 1757
+    - 9799
+    - 11181
+  - - Nebraska
+    - Under 18
+    - 15219
+    - 185
+    - 3413
+    - 1158
+  - - Nevada
+    - Total all ages
+    - 149978
+    - 4212
+    - 18379
+    - 11267
+  - - Nevada
+    - Under 18
+    - 15749
+    - 498
+    - 3616
+    - 745
+  - - New Hampshire
+    - Total all ages
+    - 46351
+    - 519
+    - 3182
+    - 3209
+  - - New Hampshire
+    - Under 18
+    - 8417
+    - 96
+    - 1193
+    - 718
+  - - New Jersey
+    - Total all ages
+    - 375719
+    - 14244
+    - 30653
+    - 53846
+  - - New Jersey
+    - Under 18
+    - 59154
+    - 3266
+    - 7908
+    - 6341
+  - - New Mexico
+    - Total all ages
+    - 83276
+    - 3319
+    - 6691
+    - 6439
+  - - New Mexico
+    - Under 18
+    - 9696
+    - 406
+    - 1864
+    - 1169
+  - - New York
+    - Total all ages
+    - 335353
+    - 16026
+    - 50045
+    - 54613
+  - - New York
+    - Under 18
+    - 48377
+    - 3223
+    - 11459
+    - 5816
+  - - North Carolina
+    - Total all ages
+    - 446154
+    - 22031
+    - 58337
+    - 38775
+  - - North Carolina
+    - Under 18
+    - 47488
+    - 2508
+    - 10838
+    - 3387
+  - - North Dakota
+    - Total all ages
+    - 27248
+    - 223
+    - 2181
+    - 1785
+  - - North Dakota
+    - Under 18
+    - 6599
+    - 51
+    - 948
+    - 232
+  - - Ohio
+    - Total all ages
+    - 251917
+    - 7107
+    - 31505
+    - 33643
+  - - Ohio
+    - Under 18
+    - 41082
+    - 1203
+    - 7824
+    - 3052
+  - - Oklahoma
+    - Total all ages
+    - 145946
+    - 5551
+    - 15497
+    - 21468
+  - - Oklahoma
+    - Under 18
+    - 19813
+    - 682
+    - 4723
+    - 1593
+  - - Oregon
+    - Total all ages
+    - 142649
+    - 4355
+    - 26635
+    - 20532
+  - - Oregon
+    - Under 18
+    - 28107
+    - 728
+    - 6613
+    - 2267
+  - - Pennsylvania
+    - Total all ages
+    - 437305
+    - 23804
+    - 52624
+    - 51944
+  - - Pennsylvania
+    - Under 18
+    - 101608
+    - 5107
+    - 12609
+    - 6306
+  - - Rhode Island
+    - Total all ages
+    - 32875
+    - 742
+    - 3102
+    - 2863
+  - - Rhode Island
+    - Under 18
+    - 5286
+    - 203
+    - 1000
+    - 503
+  - - South Carolina
+    - Total all ages
+    - 221852
+    - 10880
+    - 25092
+    - 29837
+  - - South Carolina
+    - Under 18
+    - 27736
+    - 1634
+    - 5877
+    - 3044
+  - - South Dakota
+    - Total all ages
+    - 16299
+    - 265
+    - 1277
+    - 979
+  - - South Dakota
+    - Under 18
+    - 3096
+    - 42
+    - 537
+    - 92
+  - - Tennessee
+    - Total all ages
+    - 268770
+    - 13953
+    - 32305
+    - 34286
+  - - Tennessee
+    - Under 18
+    - 34316
+    - 1596
+    - 6343
+    - 3131
+  - - Texas
+    - Total all ages
+    - 1057731
+    - 32382
+    - 120156
+    - 124214
+  - - Texas
+    - Under 18
+    - 173568
+    - 5062
+    - 30771
+    - 14503
+  - - Utah
+    - Total all ages
+    - 116880
+    - 1751
+    - 15852
+    - 8215
+  - - Utah
+    - Under 18
+    - 26481
+    - 360
+    - 5626
+    - 1328
+  - - Vermont
+    - Total all ages
+    - 13021
+    - 326
+    - 1271
+    - 1312
+  - - Vermont
+    - Under 18
+    - 1599
+    - 38
+    - 364
+    - 159
+  - - Virginia
+    - Total all ages
+    - 277579
+    - 6509
+    - 24449
+    - 26954
+  - - Virginia
+    - Under 18
+    - 32980
+    - 1061
+    - 5552
+    - 2255
+  - - Washington
+    - Total all ages
+    - 241635
+    - 7734
+    - 38178
+    - 24809
+  - - Washington
+    - Under 18
+    - 35315
+    - 1329
+    - 10557
+    - 2729
+  - - West Virginia
+    - Total all ages
+    - 52854
+    - 1697
+    - 5495
+    - 5703
+  - - West Virginia
+    - Under 18
+    - 3033
+    - 106
+    - 743
+    - 347
+  - - Wisconsin
+    - Total all ages
+    - 275752
+    - 4240
+    - 26763
+    - 16207
+  - - Wisconsin
+    - Under 18
+    - 69037
+    - 882
+    - 10981
+    - 3231
+  - - Wyoming
+    - Total all ages
+    - 37252
+    - 577
+    - 2674
+    - 3283
+  - - Wyoming
+    - Under 18
+    - 6548
+    - 69
+    - 971
+    - 476
+
+---
+arrests_by_state_2007:
+  columns:
+  - state
+  - age
+  - total_all
+  - violent_crime
+  - property_crime
+  - drug_abuse_violations
+  records: 
+  - - Alabama
+    - Total all ages
+    - 199688
+    - 6225
+    - 20812
+    - 17309
+  - - Alabama
+    - Under 18
+    - 12407
+    - 697
+    - 2939
+    - 967
+  - - Alaska
+    - Total all ages
+    - 38578
+    - 1727
+    - 4247
+    - 1759
+  - - Alaska
+    - Under 18
+    - 4161
+    - 182
+    - 1287
+    - 271
+  - - Arizona
+    - Total all ages
+    - 321503
+    - 8490
+    - 39236
+    - 35384
+  - - Arizona
+    - Under 18
+    - 52173
+    - 1551
+    - 10518
+    - 5334
+  - - Arkansas
+    - Total all ages
+    - 101694
+    - 2937
+    - 9343
+    - 9953
+  - - Arkansas
+    - Under 18
+    - 8809
+    - 306
+    - 2103
+    - 791
+  - - California
+    - Total all ages
+    - 1540894
+    - 124293
+    - 165192
+    - 289449
+  - - California
+    - Under 18
+    - 233558
+    - 17416
+    - 45662
+    - 22047
+  - - Colorado
+    - Total all ages
+    - 225099
+    - 5741
+    - 23984
+    - 18290
+  - - Colorado
+    - Under 18
+    - 43848
+    - 814
+    - 7622
+    - 3482
+  - - Connecticut
+    - Total all ages
+    - 120182
+    - 5481
+    - 15546
+    - 14663
+  - - Connecticut
+    - Under 18
+    - 18702
+    - 1028
+    - 3711
+    - 1613
+  - - Delaware
+    - Total all ages
+    - 41350
+    - 2857
+    - 6109
+    - 5744
+  - - Delaware
+    - Under 18
+    - 7321
+    - 548
+    - 1526
+    - 759
+  - - Florida
+    - Total all ages
+    - 1126395
+    - 52291
+    - 134478
+    - 169360
+  - - Florida
+    - Under 18
+    - 120190
+    - 8833
+    - 34492
+    - 14114
+  - - Georgia
+    - Total all ages
+    - 333657
+    - 12750
+    - 39586
+    - 44019
+  - - Georgia
+    - Under 18
+    - 45233
+    - 2021
+    - 9225
+    - 4066
+  - - Hawaii
+    - Total all ages
+    - 51974
+    - 1394
+    - 5326
+    - 2055
+  - - Hawaii
+    - Under 18
+    - 11341
+    - 239
+    - 1722
+    - 482
+  - - Idaho
+    - Total all ages
+    - 73896
+    - 1451
+    - 6578
+    - 5660
+  - - Idaho
+    - Under 18
+    - 16035
+    - 234
+    - 3018
+    - 901
+  - - Illinois
+    - Total all ages
+    - 191268
+    - 8779
+    - 22072
+    - 55125
+  - - Illinois
+    - Under 18
+    - 34250
+    - 3098
+    - 5247
+    - 7298
+  - - Indiana
+    - Total all ages
+    - 215449
+    - 7402
+    - 28021
+    - 22753
+  - - Indiana
+    - Under 18
+    - 35144
+    - 1080
+    - 7798
+    - 2510
+  - - Iowa
+    - Total all ages
+    - 114816
+    - 3996
+    - 13442
+    - 8825
+  - - Iowa
+    - Under 18
+    - 21362
+    - 730
+    - 5266
+    - 1275
+  - - Kansas
+    - Total all ages
+    - 73904
+    - 2341
+    - 6170
+    - 7089
+  - - Kansas
+    - Under 18
+    - 10544
+    - 341
+    - 1929
+    - 1079
+  - - Kentucky
+    - Total all ages
+    - 63884
+    - 1807
+    - 8269
+    - 11883
+  - - Kentucky
+    - Under 18
+    - 7178
+    - 315
+    - 1991
+    - 1249
+  - - Louisiana
+    - Total all ages
+    - 173584
+    - 8014
+    - 22955
+    - 22964
+  - - Louisiana
+    - Under 18
+    - 24445
+    - 1100
+    - 4883
+    - 1880
+  - - Maine
+    - Total all ages
+    - 57731
+    - 723
+    - 7727
+    - 5721
+  - - Maine
+    - Under 18
+    - 7158
+    - 86
+    - 2031
+    - 573
+  - - Maryland
+    - Total all ages
+    - 296861
+    - 12513
+    - 34595
+    - 55155
+  - - Maryland
+    - Under 18
+    - 47646
+    - 3437
+    - 11763
+    - 7474
+  - - Massachusetts
+    - Total all ages
+    - 146284
+    - 11847
+    - 17142
+    - 20626
+  - - Massachusetts
+    - Under 18
+    - 18407
+    - 1897
+    - 3213
+    - 2327
+  - - Michigan
+    - Total all ages
+    - 312777
+    - 14100
+    - 36575
+    - 33923
+  - - Michigan
+    - Under 18
+    - 41319
+    - 2431
+    - 11095
+    - 3656
+  - - Minnesota
+    - Total all ages
+    - 215671
+    - 5950
+    - 27976
+    - 18814
+  - - Minnesota
+    - Under 18
+    - 49839
+    - 1234
+    - 10005
+    - 2887
+  - - Mississippi
+    - Total all ages
+    - 85271
+    - 1789
+    - 8185
+    - 10289
+  - - Mississippi
+    - Under 18
+    - 8454
+    - 177
+    - 1577
+    - 637
+  - - Missouri
+    - Total all ages
+    - 297234
+    - 10765
+    - 35649
+    - 32958
+  - - Missouri
+    - Under 18
+    - 40093
+    - 1431
+    - 8755
+    - 3569
+  - - Montana
+    - Total all ages
+    - 28136
+    - 864
+    - 3983
+    - 1566
+  - - Montana
+    - Under 18
+    - 6950
+    - 79
+    - 1532
+    - 332
+  - - Nebraska
+    - Total all ages
+    - 83957
+    - 1699
+    - 8823
+    - 9816
+  - - Nebraska
+    - Under 18
+    - 13708
+    - 235
+    - 3100
+    - 1095
+  - - Nevada
+    - Total all ages
+    - 167412
+    - 5595
+    - 15606
+    - 14444
+  - - Nevada
+    - Under 18
+    - 21795
+    - 657
+    - 3625
+    - 1427
+  - - New Hampshire
+    - Total all ages
+    - 38396
+    - 358
+    - 2274
+    - 2570
+  - - New Hampshire
+    - Under 18
+    - 6602
+    - 85
+    - 687
+    - 536
+  - - New Jersey
+    - Total all ages
+    - 383797
+    - 13680
+    - 31828
+    - 52773
+  - - New Jersey
+    - Under 18
+    - 55824
+    - 3123
+    - 8094
+    - 6448
+  - - New Mexico
+    - Total all ages
+    - 78484
+    - 3396
+    - 6689
+    - 6805
+  - - New Mexico
+    - Under 18
+    - 10371
+    - 459
+    - 1719
+    - 1238
+  - - New York
+    - Total all ages
+    - 345251
+    - 16069
+    - 52969
+    - 61163
+  - - New York
+    - Under 18
+    - 46232
+    - 3090
+    - 11478
+    - 5958
+  - - North Carolina
+    - Total all ages
+    - 407663
+    - 19623
+    - 56115
+    - 38343
+  - - North Carolina
+    - Under 18
+    - 45412
+    - 2409
+    - 10847
+    - 3855
+  - - North Dakota
+    - Total all ages
+    - 27359
+    - 321
+    - 2517
+    - 1743
+  - - North Dakota
+    - Under 18
+    - 6651
+    - 47
+    - 1122
+    - 261
+  - - Ohio
+    - Total all ages
+    - 256718
+    - 6911
+    - 33375
+    - 34740
+  - - Ohio
+    - Under 18
+    - 40970
+    - 1158
+    - 7710
+    - 3186
+  - - Oklahoma
+    - Total all ages
+    - 161719
+    - 5665
+    - 15161
+    - 22319
+  - - Oklahoma
+    - Under 18
+    - 21357
+    - 714
+    - 4512
+    - 2022
+  - - Oregon
+    - Total all ages
+    - 147335
+    - 4938
+    - 26225
+    - 18664
+  - - Oregon
+    - Under 18
+    - 30236
+    - 862
+    - 6948
+    - 2259
+  - - Pennsylvania
+    - Total all ages
+    - 467655
+    - 24609
+    - 56190
+    - 57305
+  - - Pennsylvania
+    - Under 18
+    - 102497
+    - 5257
+    - 13274
+    - 6458
+  - - Rhode Island
+    - Total all ages
+    - 26966
+    - 463
+    - 2700
+    - 2933
+  - - Rhode Island
+    - Under 18
+    - 4149
+    - 80
+    - 890
+    - 358
+  - - South Carolina
+    - Total all ages
+    - 213355
+    - 10681
+    - 25181
+    - 30679
+  - - South Carolina
+    - Under 18
+    - 24945
+    - 1360
+    - 5180
+    - 3260
+  - - South Dakota
+    - Total all ages
+    - 18014
+    - 265
+    - 1502
+    - 1371
+  - - South Dakota
+    - Under 18
+    - 3665
+    - 42
+    - 645
+    - 210
+  - - Tennessee
+    - Total all ages
+    - 304793
+    - 13613
+    - 36353
+    - 38899
+  - - Tennessee
+    - Under 18
+    - 35880
+    - 1747
+    - 6576
+    - 3298
+  - - Texas
+    - Total all ages
+    - 1087325
+    - 33309
+    - 119633
+    - 136361
+  - - Texas
+    - Under 18
+    - 166976
+    - 4881
+    - 28262
+    - 15434
+  - - Utah
+    - Total all ages
+    - 120167
+    - 1798
+    - 15694
+    - 9239
+  - - Utah
+    - Under 18
+    - 25789
+    - 351
+    - 5513
+    - 1485
+  - - Vermont
+    - Total all ages
+    - 16731
+    - 438
+    - 1820
+    - 1632
+  - - Vermont
+    - Under 18
+    - 1836
+    - 42
+    - 370
+    - 186
+  - - Virginia
+    - Total all ages
+    - 313457
+    - 7229
+    - 28562
+    - 32941
+  - - Virginia
+    - Under 18
+    - 39666
+    - 1142
+    - 6137
+    - 2808
+  - - Washington
+    - Total all ages
+    - 248676
+    - 7616
+    - 36073
+    - 28872
+  - - Washington
+    - Under 18
+    - 35096
+    - 1440
+    - 10234
+    - 2913
+  - - West Virginia
+    - Total all ages
+    - 46835
+    - 1182
+    - 4498
+    - 3928
+  - - West Virginia
+    - Under 18
+    - 2347
+    - 59
+    - 513
+    - 224
+  - - Wisconsin
+    - Total all ages
+    - 421093
+    - 8007
+    - 40989
+    - 25746
+  - - Wisconsin
+    - Under 18
+    - 105319
+    - 1818
+    - 16047
+    - 4911
+  - - Wyoming
+    - Total all ages
+    - 39808
+    - 641
+    - 2683
+    - 3110
+  - - Wyoming
+    - Under 18
+    - 7139
+    - 70
+    - 988
+    - 562
+
+---
+arrests_by_state_2009:
+  columns:
+  - state
+  - age
+  - total_all
+  - violent_crime
+  - property_crime
+  - drug_abuse_violations
+  records: 
+  - - Alabama
+    - Total all ages
+    - 193586
+    - 5759
+    - 24104
+    - 15180
+  - - Alabama
+    - Under 18
+    - 11035
+    - 620
+    - 3735
+    - 818
+  - - Alaska
+    - Total all ages
+    - 40349
+    - 2145
+    - 3937
+    - 2050
+  - - Alaska
+    - Under 18
+    - 3780
+    - 201
+    - 1077
+    - 314
+  - - Arizona
+    - Total all ages
+    - 336686
+    - 9364
+    - 44116
+    - 35087
+  - - Arizona
+    - Under 18
+    - 50921
+    - 1344
+    - 10980
+    - 5422
+  - - Arkansas
+    - Total all ages
+    - 125958
+    - 3988
+    - 15785
+    - 11213
+  - - Arkansas
+    - Under 18
+    - 11745
+    - 352
+    - 3323
+    - 863
+  - - California
+    - Total all ages
+    - 1474004
+    - 121369
+    - 164744
+    - 251740
+  - - California
+    - Under 18
+    - 203345
+    - 15146
+    - 43399
+    - 21882
+  - - Colorado
+    - Total all ages
+    - 213163
+    - 6470
+    - 25826
+    - 16658
+  - - Colorado
+    - Under 18
+    - 37890
+    - 814
+    - 7687
+    - 3180
+  - - Connecticut
+    - Total all ages
+    - 138703
+    - 6861
+    - 19042
+    - 17757
+  - - Connecticut
+    - Under 18
+    - 18665
+    - 1170
+    - 4087
+    - 1664
+  - - Delaware
+    - Total all ages
+    - 42366
+    - 2829
+    - 7448
+    - 5752
+  - - Delaware
+    - Under 18
+    - 6647
+    - 499
+    - 1645
+    - 667
+  - - Florida
+    - Total all ages
+    - 1049817
+    - 49859
+    - 145011
+    - 146056
+  - - Florida
+    - Under 18
+    - 105805
+    - 7211
+    - 32803
+    - 11561
+  - - Georgia
+    - Total all ages
+    - 320569
+    - 13014
+    - 45965
+    - 39395
+  - - Georgia
+    - Under 18
+    - 42572
+    - 2167
+    - 10907
+    - 3444
+  - - Hawaii
+    - Total all ages
+    - 51974
+    - 1394
+    - 5326
+    - 2055
+  - - Hawaii
+    - Under 18
+    - 11341
+    - 239
+    - 1722
+    - 482
+  - - Idaho
+    - Total all ages
+    - 73268
+    - 1568
+    - 7318
+    - 5751
+  - - Idaho
+    - Under 18
+    - 13735
+    - 205
+    - 2907
+    - 804
+  - - Illinois
+    - Total all ages
+    - 157242
+    - 8311
+    - 22180
+    - 43536
+  - - Illinois
+    - Under 18
+    - 29961
+    - 3016
+    - 5651
+    - 5664
+  - - Indiana
+    - Total all ages
+    - 217684
+    - 7710
+    - 29597
+    - 23203
+  - - Indiana
+    - Under 18
+    - 35390
+    - 1185
+    - 8078
+    - 2326
+  - - Iowa
+    - Total all ages
+    - 110553
+    - 3938
+    - 14625
+    - 8376
+  - - Iowa
+    - Under 18
+    - 18341
+    - 681
+    - 5067
+    - 1032
+  - - Kansas
+    - Total all ages
+    - 75034
+    - 2326
+    - 7126
+    - 6316
+  - - Kansas
+    - Under 18
+    - 9585
+    - 284
+    - 2344
+    - 809
+  - - Kentucky
+    - Total all ages
+    - 133542
+    - 3536
+    - 15541
+    - 18553
+  - - Kentucky
+    - Under 18
+    - 7946
+    - 420
+    - 2647
+    - 875
+  - - Louisiana
+    - Total all ages
+    - 139698
+    - 9894
+    - 22359
+    - 19334
+  - - Louisiana
+    - Under 18
+    - 18674
+    - 1654
+    - 4618
+    - 1414
+  - - Maine
+    - Total all ages
+    - 56567
+    - 712
+    - 8173
+    - 5897
+  - - Maine
+    - Under 18
+    - 6899
+    - 73
+    - 1893
+    - 625
+  - - Maryland
+    - Total all ages
+    - 283407
+    - 12464
+    - 35779
+    - 51629
+  - - Maryland
+    - Under 18
+    - 41400
+    - 3216
+    - 10977
+    - 6516
+  - - Massachusetts
+    - Total all ages
+    - 148266
+    - 13003
+    - 20097
+    - 12127
+  - - Massachusetts
+    - Under 18
+    - 16079
+    - 1771
+    - 3390
+    - 682
+  - - Michigan
+    - Total all ages
+    - 296005
+    - 13330
+    - 38817
+    - 34910
+  - - Michigan
+    - Under 18
+    - 35771
+    - 2106
+    - 10751
+    - 3579
+  - - Minnesota
+    - Total all ages
+    - 191480
+    - 5419
+    - 30539
+    - 17040
+  - - Minnesota
+    - Under 18
+    - 42324
+    - 1000
+    - 10128
+    - 2730
+  - - Mississippi
+    - Total all ages
+    - 123587
+    - 2065
+    - 13355
+    - 13240
+  - - Mississippi
+    - Under 18
+    - 11715
+    - 251
+    - 2923
+    - 772
+  - - Missouri
+    - Total all ages
+    - 324277
+    - 12169
+    - 44812
+    - 35321
+  - - Missouri
+    - Under 18
+    - 43005
+    - 1689
+    - 11332
+    - 3453
+  - - Montana
+    - Total all ages
+    - 31237
+    - 893
+    - 4485
+    - 1539
+  - - Montana
+    - Under 18
+    - 6948
+    - 117
+    - 1545
+    - 304
+  - - Nebraska
+    - Total all ages
+    - 84107
+    - 1943
+    - 10147
+    - 9731
+  - - Nebraska
+    - Under 18
+    - 14591
+    - 270
+    - 3666
+    - 1120
+  - - Nevada
+    - Total all ages
+    - 172548
+    - 7501
+    - 18250
+    - 16976
+  - - Nevada
+    - Under 18
+    - 23988
+    - 997
+    - 4665
+    - 1834
+  - - New Hampshire
+    - Total all ages
+    - 49351
+    - 694
+    - 4343
+    - 4020
+  - - New Hampshire
+    - Under 18
+    - 7417
+    - 90
+    - 1131
+    - 773
+  - - New Jersey
+    - Total all ages
+    - 387595
+    - 13749
+    - 34845
+    - 52461
+  - - New Jersey
+    - Under 18
+    - 48407
+    - 2813
+    - 8225
+    - 5440
+  - - New Mexico
+    - Total all ages
+    - 95965
+    - 3638
+    - 10739
+    - 6478
+  - - New Mexico
+    - Under 18
+    - 9666
+    - 416
+    - 2614
+    - 1021
+  - - New York
+    - Total all ages
+    - 347436
+    - 15628
+    - 59064
+    - 60543
+  - - New York
+    - Under 18
+    - 41671
+    - 2619
+    - 11831
+    - 5217
+  - - North Carolina
+    - Total all ages
+    - 389370
+    - 17790
+    - 58545
+    - 33062
+  - - North Carolina
+    - Under 18
+    - 36830
+    - 1913
+    - 10337
+    - 2884
+  - - North Dakota
+    - Total all ages
+    - 27209
+    - 465
+    - 3125
+    - 1851
+  - - North Dakota
+    - Under 18
+    - 6170
+    - 57
+    - 1263
+    - 281
+  - - Ohio
+    - Total all ages
+    - 266624
+    - 7342
+    - 39106
+    - 30904
+  - - Ohio
+    - Under 18
+    - 40191
+    - 1263
+    - 8708
+    - 2565
+  - - Oklahoma
+    - Total all ages
+    - 159508
+    - 5953
+    - 19557
+    - 20311
+  - - Oklahoma
+    - Under 18
+    - 20280
+    - 652
+    - 5566
+    - 1791
+  - - Oregon
+    - Total all ages
+    - 132035
+    - 4214
+    - 24125
+    - 15469
+  - - Oregon
+    - Under 18
+    - 24411
+    - 548
+    - 6131
+    - 2178
+  - - Pennsylvania
+    - Total all ages
+    - 446511
+    - 23505
+    - 57552
+    - 52549
+  - - Pennsylvania
+    - Under 18
+    - 87747
+    - 4475
+    - 11852
+    - 5147
+  - - Rhode Island
+    - Total all ages
+    - 34247
+    - 923
+    - 3989
+    - 4081
+  - - Rhode Island
+    - Under 18
+    - 5184
+    - 195
+    - 1131
+    - 546
+  - - South Carolina
+    - Total all ages
+    - 198552
+    - 9435
+    - 25534
+    - 27548
+  - - South Carolina
+    - Under 18
+    - 21129
+    - 1098
+    - 5345
+    - 2478
+  - - South Dakota
+    - Total all ages
+    - 28206
+    - 466
+    - 3636
+    - 2868
+  - - South Dakota
+    - Under 18
+    - 6091
+    - 55
+    - 1408
+    - 456
+  - - Tennessee
+    - Total all ages
+    - 305259
+    - 13150
+    - 41924
+    - 35812
+  - - Tennessee
+    - Under 18
+    - 34792
+    - 1598
+    - 7548
+    - 3002
+  - - Texas
+    - Total all ages
+    - 1174813
+    - 34683
+    - 143518
+    - 144329
+  - - Texas
+    - Under 18
+    - 170190
+    - 4857
+    - 33363
+    - 16236
+  - - Utah
+    - Total all ages
+    - 135850
+    - 2227
+    - 20677
+    - 11224
+  - - Utah
+    - Under 18
+    - 26491
+    - 358
+    - 6678
+    - 1900
+  - - Vermont
+    - Total all ages
+    - 15630
+    - 539
+    - 2147
+    - 1433
+  - - Vermont
+    - Under 18
+    - 1531
+    - 43
+    - 353
+    - 137
+  - - Virginia
+    - Total all ages
+    - 326202
+    - 6638
+    - 35284
+    - 29780
+  - - Virginia
+    - Under 18
+    - 33789
+    - 783
+    - 6602
+    - 2332
+  - - Washington
+    - Total all ages
+    - 200290
+    - 7580
+    - 32771
+    - 16561
+  - - Washington
+    - Under 18
+    - 26080
+    - 1210
+    - 7662
+    - 2217
+  - - West Virginia
+    - Total all ages
+    - 47529
+    - 1459
+    - 6015
+    - 6167
+  - - West Virginia
+    - Under 18
+    - 2244
+    - 56
+    - 625
+    - 201
+  - - Wisconsin
+    - Total all ages
+    - 369962
+    - 7521
+    - 40465
+    - 24446
+  - - Wisconsin
+    - Under 18
+    - 84143
+    - 1374
+    - 13644
+    - 4061
+  - - Wyoming
+    - Total all ages
+    - 38737
+    - 577
+    - 3061
+    - 2807
+  - - Wyoming
+    - Under 18
+    - 6071
+    - 47
+    - 1008
+    - 452
+
+---
+arrests_by_state_2011:
+  columns:
+  - state
+  - age
+  - total_all
+  - violent_crime
+  - property_crime
+  - drug_abuse_violations
+  records: 
+  - - Alabama
+    - Total all ages
+    - 2101
+    - 15
+    - 531
+    - 300
+  - - Alabama
+    - Under 18
+    - 156
+    - 0
+    - 95
+    - 27
+  - - Alaska
+    - Total all ages
+    - 39607
+    - 2006
+    - 3824
+    - 2341
+  - - Alaska
+    - Under 18
+    - 3453
+    - 194
+    - 1028
+    - 352
+  - - Arizona
+    - Total all ages
+    - 285528
+    - 8589
+    - 40144
+    - 30886
+  - - Arizona
+    - Under 18
+    - 37596
+    - 1059
+    - 8886
+    - 5008
+  - - Arkansas
+    - Total all ages
+    - 108281
+    - 3229
+    - 12948
+    - 8783
+  - - Arkansas
+    - Under 18
+    - 8320
+    - 318
+    - 2374
+    - 661
+  - - California
+    - Total all ages
+    - 1183470
+    - 107165
+    - 147842
+    - 188188
+  - - California
+    - Under 18
+    - 144768
+    - 10972
+    - 33873
+    - 12408
+  - - Colorado
+    - Total all ages
+    - 208352
+    - 5701
+    - 23445
+    - 15109
+  - - Colorado
+    - Under 18
+    - 28675
+    - 571
+    - 6126
+    - 3240
+  - - Connecticut
+    - Total all ages
+    - 119285
+    - 4817
+    - 17366
+    - 13667
+  - - Connecticut
+    - Under 18
+    - 12505
+    - 599
+    - 2684
+    - 1105
+  - - Delaware
+    - Total all ages
+    - 37832
+    - 2328
+    - 7325
+    - 5110
+  - - Delaware
+    - Under 18
+    - 4785
+    - 360
+    - 1191
+    - 491
+  - - Florida
+    - Total all ages
+    - 952845
+    - 43364
+    - 128489
+    - 130296
+  - - Florida
+    - Under 18
+    - 87025
+    - 5729
+    - 25887
+    - 10055
+  - - Georgia
+    - Total all ages
+    - 349708
+    - 14419
+    - 53874
+    - 42812
+  - - Georgia
+    - Under 18
+    - 38046
+    - 1805
+    - 10603
+    - 3106
+  - - Hawaii
+    - Total all ages
+    - 8832
+    - 267
+    - 972
+    - 892
+  - - Hawaii
+    - Under 18
+    - 617
+    - 37
+    - 123
+    - 131
+  - - Idaho
+    - Total all ages
+    - 63005
+    - 1303
+    - 7037
+    - 6558
+  - - Idaho
+    - Under 18
+    - 10370
+    - 142
+    - 2393
+    - 1001
+  - - Illinois
+    - Total all ages
+    - 132863
+    - 6939
+    - 18924
+    - 38701
+  - - Illinois
+    - Under 18
+    - 24136
+    - 2380
+    - 5030
+    - 4595
+  - - Indiana
+    - Total all ages
+    - 194774
+    - 8398
+    - 30383
+    - 23345
+  - - Indiana
+    - Under 18
+    - 25633
+    - 1187
+    - 6828
+    - 2319
+  - - Iowa
+    - Total all ages
+    - 105015
+    - 3939
+    - 14424
+    - 9139
+  - - Iowa
+    - Under 18
+    - 15779
+    - 545
+    - 4381
+    - 1124
+  - - Kansas
+    - Total all ages
+    - 78391
+    - 2236
+    - 7624
+    - 7364
+  - - Kansas
+    - Under 18
+    - 7729
+    - 254
+    - 2022
+    - 922
+  - - Kentucky
+    - Total all ages
+    - 176087
+    - 3563
+    - 19953
+    - 21383
+  - - Kentucky
+    - Under 18
+    - 8042
+    - 399
+    - 2763
+    - 896
+  - - Louisiana
+    - Total all ages
+    - 119085
+    - 8420
+    - 19892
+    - 14925
+  - - Louisiana
+    - Under 18
+    - 13711
+    - 1378
+    - 3492
+    - 1179
+  - - Maine
+    - Total all ages
+    - 51592
+    - 751
+    - 8142
+    - 5627
+  - - Maine
+    - Under 18
+    - 5342
+    - 73
+    - 1424
+    - 512
+  - - Maryland
+    - Total all ages
+    - 229010
+    - 9551
+    - 28345
+    - 41022
+  - - Maryland
+    - Under 18
+    - 30018
+    - 2026
+    - 7696
+    - 4330
+  - - Massachusetts
+    - Total all ages
+    - 137379
+    - 11512
+    - 18428
+    - 10849
+  - - Massachusetts
+    - Under 18
+    - 12149
+    - 1340
+    - 2239
+    - 504
+  - - Michigan
+    - Total all ages
+    - 251200
+    - 11856
+    - 34176
+    - 31486
+  - - Michigan
+    - Under 18
+    - 26155
+    - 1530
+    - 7721
+    - 2837
+  - - Minnesota
+    - Total all ages
+    - 176051
+    - 5140
+    - 28405
+    - 17727
+  - - Minnesota
+    - Under 18
+    - 34171
+    - 861
+    - 8018
+    - 3146
+  - - Mississippi
+    - Total all ages
+    - 102765
+    - 2223
+    - 11509
+    - 10862
+  - - Mississippi
+    - Under 18
+    - 7915
+    - 211
+    - 2127
+    - 581
+  - - Missouri
+    - Total all ages
+    - 295080
+    - 10401
+    - 41476
+    - 35383
+  - - Missouri
+    - Under 18
+    - 31503
+    - 1171
+    - 8236
+    - 3245
+  - - Montana
+    - Total all ages
+    - 29678
+    - 829
+    - 4118
+    - 1790
+  - - Montana
+    - Under 18
+    - 6117
+    - 91
+    - 1422
+    - 402
+  - - Nebraska
+    - Total all ages
+    - 81890
+    - 2111
+    - 11062
+    - 10423
+  - - Nebraska
+    - Under 18
+    - 12640
+    - 195
+    - 3424
+    - 1319
+  - - Nevada
+    - Total all ages
+    - 141908
+    - 5690
+    - 14355
+    - 15562
+  - - Nevada
+    - Under 18
+    - 16588
+    - 655
+    - 3317
+    - 1810
+  - - New Hampshire
+    - Total all ages
+    - 40699
+    - 860
+    - 4152
+    - 3631
+  - - New Hampshire
+    - Under 18
+    - 5299
+    - 85
+    - 810
+    - 580
+  - - New Jersey
+    - Total all ages
+    - 333136
+    - 11947
+    - 33726
+    - 46377
+  - - New Jersey
+    - Under 18
+    - 30690
+    - 2011
+    - 5819
+    - 4739
+  - - New Mexico
+    - Total all ages
+    - 108731
+    - 4386
+    - 13257
+    - 8859
+  - - New Mexico
+    - Under 18
+    - 11525
+    - 442
+    - 3307
+    - 1437
+  - - New York
+    - Total all ages
+    - 303435
+    - 11306
+    - 53185
+    - 56508
+  - - New York
+    - Under 18
+    - 31515
+    - 1667
+    - 9339
+    - 4180
+  - - North Carolina
+    - Total all ages
+    - 494561
+    - 19735
+    - 71541
+    - 42225
+  - - North Carolina
+    - Under 18
+    - 40803
+    - 1795
+    - 10600
+    - 3430
+  - - North Dakota
+    - Total all ages
+    - 26012
+    - 495
+    - 2936
+    - 2243
+  - - North Dakota
+    - Under 18
+    - 4754
+    - 44
+    - 965
+    - 342
+  - - Ohio
+    - Total all ages
+    - 256625
+    - 7642
+    - 37720
+    - 28943
+  - - Ohio
+    - Under 18
+    - 29697
+    - 1027
+    - 6127
+    - 2221
+  - - Oklahoma
+    - Total all ages
+    - 134295
+    - 5155
+    - 17945
+    - 15931
+  - - Oklahoma
+    - Under 18
+    - 13878
+    - 532
+    - 4138
+    - 1320
+  - - Oregon
+    - Total all ages
+    - 133414
+    - 4289
+    - 24655
+    - 19262
+  - - Oregon
+    - Under 18
+    - 20457
+    - 445
+    - 5076
+    - 3059
+  - - Pennsylvania
+    - Total all ages
+    - 418838
+    - 23179
+    - 58946
+    - 52483
+  - - Pennsylvania
+    - Under 18
+    - 67659
+    - 4143
+    - 10187
+    - 4655
+  - - Rhode Island
+    - Total all ages
+    - 29852
+    - 702
+    - 3368
+    - 3111
+  - - Rhode Island
+    - Under 18
+    - 3844
+    - 115
+    - 741
+    - 388
+  - - South Carolina
+    - Total all ages
+    - 169884
+    - 7870
+    - 26954
+    - 26287
+  - - South Carolina
+    - Under 18
+    - 15796
+    - 736
+    - 4265
+    - 2079
+  - - South Dakota
+    - Total all ages
+    - 29023
+    - 577
+    - 3544
+    - 3694
+  - - South Dakota
+    - Under 18
+    - 4962
+    - 58
+    - 1127
+    - 654
+  - - Tennessee
+    - Total all ages
+    - 386758
+    - 16546
+    - 45236
+    - 40911
+  - - Tennessee
+    - Under 18
+    - 33318
+    - 1958
+    - 6587
+    - 2768
+  - - Texas
+    - Total all ages
+    - 1026398
+    - 30462
+    - 128461
+    - 126695
+  - - Texas
+    - Under 18
+    - 121237
+    - 3609
+    - 25409
+    - 13561
+  - - Utah
+    - Total all ages
+    - 47321
+    - 703
+    - 8138
+    - 5207
+  - - Utah
+    - Under 18
+    - 9426
+    - 156
+    - 2273
+    - 968
+  - - Vermont
+    - Total all ages
+    - 10907
+    - 421
+    - 1487
+    - 1041
+  - - Vermont
+    - Under 18
+    - 953
+    - 35
+    - 202
+    - 92
+  - - Virginia
+    - Total all ages
+    - 347903
+    - 6721
+    - 38670
+    - 35416
+  - - Virginia
+    - Under 18
+    - 28059
+    - 876
+    - 6110
+    - 2685
+  - - Washington
+    - Total all ages
+    - 129201
+    - 5295
+    - 24813
+    - 12570
+  - - Washington
+    - Under 18
+    - 17052
+    - 686
+    - 5252
+    - 2204
+  - - West Virginia
+    - Total all ages
+    - 50204
+    - 1947
+    - 6537
+    - 6798
+  - - West Virginia
+    - Under 18
+    - 1882
+    - 80
+    - 470
+    - 184
+  - - Wisconsin
+    - Total all ages
+    - 317773
+    - 7448
+    - 35805
+    - 24140
+  - - Wisconsin
+    - Under 18
+    - 64921
+    - 1411
+    - 10267
+    - 3634
+  - - Wyoming
+    - Total all ages
+    - 34041
+    - 560
+    - 2735
+    - 3205
+  - - Wyoming
+    - Under 18
+    - 4782
+    - 49
+    - 768
+    - 570
+
+---
+arrests_by_state_2012:
+  columns:
+  - state
+  - age
+  - total_all
+  - violent_crime
+  - property_crime
+  - drug_abuse_violations
+  records: 
+  - - Alabama
+    - Total all ages
+    - 1918
+    - 23
+    - 489
+    - 306
+  - - Alabama
+    - Under 18
+    - 132
+    - 5
+    - 61
+    - 25
+  - - Alaska
+    - Total all ages
+    - 29690
+    - 1618
+    - 3602
+    - 1547
+  - - Alaska
+    - Under 18
+    - 2559
+    - 127
+    - 767
+    - 321
+  - - Arizona
+    - Total all ages
+    - 256968
+    - 8101
+    - 38802
+    - 27273
+  - - Arizona
+    - Under 18
+    - 32428
+    - 997
+    - 7267
+    - 4282
+  - - Arkansas
+    - Total all ages
+    - 137962
+    - 4137
+    - 16680
+    - 11083
+  - - Arkansas
+    - Under 18
+    - 9939
+    - 385
+    - 2694
+    - 884
+  - - California
+    - Total all ages
+    - 1228185
+    - 103122
+    - 144300
+    - 194290
+  - - California
+    - Under 18
+    - 115682
+    - 9178
+    - 27322
+    - 10326
+  - - Colorado
+    - Total all ages
+    - 213769
+    - 5375
+    - 23128
+    - 15953
+  - - Colorado
+    - Under 18
+    - 26333
+    - 546
+    - 5435
+    - 2996
+  - - Connecticut
+    - Total all ages
+    - 110186
+    - 4438
+    - 16280
+    - 9651
+  - - Connecticut
+    - Under 18
+    - 10853
+    - 583
+    - 2163
+    - 761
+  - - Delaware
+    - Total all ages
+    - 39680
+    - 2387
+    - 8017
+    - 5463
+  - - Delaware
+    - Under 18
+    - 4562
+    - 356
+    - 1140
+    - 500
+  - - Florida
+    - Total all ages
+    - 960086
+    - 41610
+    - 125581
+    - 127919
+  - - Florida
+    - Under 18
+    - 78195
+    - 4824
+    - 23188
+    - 8812
+  - - Georgia
+    - Total all ages
+    - 330261
+    - 13663
+    - 50380
+    - 42889
+  - - Georgia
+    - Under 18
+    - 34441
+    - 1680
+    - 9194
+    - 2994
+  - - Hawaii
+    - Total all ages
+    - 8832
+    - 267
+    - 972
+    - 892
+  - - Hawaii
+    - Under 18
+    - 617
+    - 37
+    - 123
+    - 131
+  - - Idaho
+    - Total all ages
+    - 64164
+    - 1482
+    - 7225
+    - 6848
+  - - Idaho
+    - Under 18
+    - 9876
+    - 163
+    - 2245
+    - 1030
+  - - Illinois
+    - Total all ages
+    - 125398
+    - 6685
+    - 18344
+    - 35715
+  - - Illinois
+    - Under 18
+    - 21693
+    - 2334
+    - 4336
+    - 4156
+  - - Indiana
+    - Total all ages
+    - 151935
+    - 5987
+    - 22874
+    - 18372
+  - - Indiana
+    - Under 18
+    - 19005
+    - 741
+    - 4532
+    - 1786
+  - - Iowa
+    - Total all ages
+    - 102554
+    - 4128
+    - 13911
+    - 8666
+  - - Iowa
+    - Under 18
+    - 14469
+    - 521
+    - 3838
+    - 1147
+  - - Kansas
+    - Total all ages
+    - 78153
+    - 2269
+    - 7934
+    - 7629
+  - - Kansas
+    - Under 18
+    - 7105
+    - 255
+    - 1849
+    - 845
+  - - Kentucky
+    - Total all ages
+    - 179435
+    - 3704
+    - 21538
+    - 21141
+  - - Kentucky
+    - Under 18
+    - 7001
+    - 398
+    - 2450
+    - 722
+  - - Louisiana
+    - Total all ages
+    - 122931
+    - 7741
+    - 21778
+    - 15748
+  - - Louisiana
+    - Under 18
+    - 13492
+    - 1097
+    - 3414
+    - 1176
+  - - Maine
+    - Total all ages
+    - 51052
+    - 770
+    - 8260
+    - 5544
+  - - Maine
+    - Under 18
+    - 5351
+    - 68
+    - 1421
+    - 517
+  - - Maryland
+    - Total all ages
+    - 214837
+    - 9665
+    - 27862
+    - 39733
+  - - Maryland
+    - Under 18
+    - 23556
+    - 1633
+    - 6098
+    - 3421
+  - - Massachusetts
+    - Total all ages
+    - 137532
+    - 10719
+    - 18900
+    - 11599
+  - - Massachusetts
+    - Under 18
+    - 11018
+    - 1066
+    - 1835
+    - 505
+  - - Michigan
+    - Total all ages
+    - 252589
+    - 11537
+    - 33189
+    - 31823
+  - - Michigan
+    - Under 18
+    - 24166
+    - 1339
+    - 6537
+    - 2722
+  - - Minnesota
+    - Total all ages
+    - 157025
+    - 27246
+    - 24025
+    - 15087
+  - - Minnesota
+    - Under 18
+    - 29876
+    - 6842
+    - 6276
+    - 2601
+  - - Mississippi
+    - Total all ages
+    - 94386
+    - 1724
+    - 10320
+    - 10678
+  - - Mississippi
+    - Under 18
+    - 7364
+    - 108
+    - 1712
+    - 643
+  - - Missouri
+    - Total all ages
+    - 289864
+    - 10020
+    - 42838
+    - 34943
+  - - Missouri
+    - Under 18
+    - 28657
+    - 1105
+    - 7424
+    - 2763
+  - - Montana
+    - Total all ages
+    - 32384
+    - 907
+    - 4671
+    - 2077
+  - - Montana
+    - Under 18
+    - 6715
+    - 106
+    - 1437
+    - 380
+  - - Nebraska
+    - Total all ages
+    - 77665
+    - 2080
+    - 10893
+    - 10433
+  - - Nebraska
+    - Under 18
+    - 11700
+    - 210
+    - 3117
+    - 1309
+  - - Nevada
+    - Total all ages
+    - 142459
+    - 6557
+    - 15569
+    - 15001
+  - - Nevada
+    - Under 18
+    - 13283
+    - 714
+    - 2764
+    - 1189
+  - - New Hampshire
+    - Total all ages
+    - 45492
+    - 879
+    - 4602
+    - 3941
+  - - New Hampshire
+    - Under 18
+    - 5387
+    - 64
+    - 773
+    - 646
+  - - New Jersey
+    - Total all ages
+    - 328432
+    - 11341
+    - 32995
+    - 51111
+  - - New Jersey
+    - Under 18
+    - 26688
+    - 1822
+    - 4778
+    - 4811
+  - - New Mexico
+    - Total all ages
+    - 98410
+    - 4016
+    - 12560
+    - 8044
+  - - New Mexico
+    - Under 18
+    - 9354
+    - 389
+    - 2456
+    - 1238
+  - - New York
+    - Total all ages
+    - 338463
+    - 14318
+    - 62766
+    - 65840
+  - - New York
+    - Under 18
+    - 39453
+    - 2330
+    - 10957
+    - 5186
+  - - North Carolina
+    - Total all ages
+    - 435932
+    - 18825
+    - 66248
+    - 38240
+  - - North Carolina
+    - Under 18
+    - 32868
+    - 1495
+    - 8933
+    - 2943
+  - - North Dakota
+    - Total all ages
+    - 29084
+    - 528
+    - 3119
+    - 2446
+  - - North Dakota
+    - Under 18
+    - 4730
+    - 57
+    - 860
+    - 321
+  - - Ohio
+    - Total all ages
+    - 227243
+    - 6236
+    - 35439
+    - 26936
+  - - Ohio
+    - Under 18
+    - 25052
+    - 767
+    - 5405
+    - 1935
+  - - Oklahoma
+    - Total all ages
+    - 127825
+    - 4760
+    - 17664
+    - 16688
+  - - Oklahoma
+    - Under 18
+    - 12614
+    - 500
+    - 3697
+    - 1366
+  - - Oregon
+    - Total all ages
+    - 127754
+    - 4205
+    - 25279
+    - 18929
+  - - Oregon
+    - Under 18
+    - 16616
+    - 477
+    - 4371
+    - 2514
+  - - Pennsylvania
+    - Total all ages
+    - 433863
+    - 23412
+    - 62665
+    - 55610
+  - - Pennsylvania
+    - Under 18
+    - 66833
+    - 3692
+    - 9376
+    - 4720
+  - - Rhode Island
+    - Total all ages
+    - 33191
+    - 901
+    - 3638
+    - 3665
+  - - Rhode Island
+    - Under 18
+    - 3705
+    - 129
+    - 743
+    - 411
+  - - South Carolina
+    - Total all ages
+    - 169384
+    - 7257
+    - 27199
+    - 27174
+  - - South Carolina
+    - Under 18
+    - 14385
+    - 611
+    - 3810
+    - 2159
+  - - South Dakota
+    - Total all ages
+    - 35365
+    - 769
+    - 3865
+    - 4372
+  - - South Dakota
+    - Under 18
+    - 5682
+    - 68
+    - 1169
+    - 816
+  - - Tennessee
+    - Total all ages
+    - 356340
+    - 16800
+    - 44154
+    - 43448
+  - - Tennessee
+    - Under 18
+    - 28273
+    - 1721
+    - 5825
+    - 2647
+  - - Texas
+    - Total all ages
+    - 1009136
+    - 30245
+    - 129856
+    - 133110
+  - - Texas
+    - Under 18
+    - 110740
+    - 3592
+    - 23334
+    - 14006
+  - - Utah
+    - Total all ages
+    - 117185
+    - 2045
+    - 19502
+    - 12710
+  - - Utah
+    - Under 18
+    - 19053
+    - 277
+    - 4850
+    - 1799
+  - - Vermont
+    - Total all ages
+    - 13073
+    - 519
+    - 1824
+    - 1390
+  - - Vermont
+    - Under 18
+    - 1036
+    - 37
+    - 208
+    - 127
+  - - Virginia
+    - Total all ages
+    - 339362
+    - 6765
+    - 37598
+    - 38038
+  - - Virginia
+    - Under 18
+    - 25330
+    - 614
+    - 5133
+    - 2789
+  - - Washington
+    - Total all ages
+    - 172362
+    - 7200
+    - 31512
+    - 12706
+  - - Washington
+    - Under 18
+    - 18006
+    - 859
+    - 5487
+    - 2110
+  - - West Virginia
+    - Total all ages
+    - 46364
+    - 1750
+    - 6465
+    - 6647
+  - - West Virginia
+    - Under 18
+    - 1678
+    - 73
+    - 413
+    - 177
+  - - Wisconsin
+    - Total all ages
+    - 324207
+    - 8481
+    - 38666
+    - 26073
+  - - Wisconsin
+    - Under 18
+    - 63281
+    - 1318
+    - 10107
+    - 3650
+  - - Wyoming
+    - Total all ages
+    - 30404
+    - 458
+    - 2509
+    - 3036
+  - - Wyoming
+    - Under 18
+    - 3973
+    - 27
+    - 667
+    - 592
+
+---
+drug_violations:
+  columns:
+  - year
+  - da_violation
+  - us_total
+  - northeast
+  - midwest
+  - south
+  - west
+  records: 
+  - - 2005
+    - marijuana possession
+    - 37.7
+    - 42.0
+    - 47.5
+    - 44.7
+    - 24.3
+  - - 2005
+    - marijuana sale
+    - 4.9
+    - 6.0
+    - 7.3
+    - 4.6
+    - 3.8
+  - - 2005
+    - total possession
+    - 81.7
+    - 76.3
+    - 81.5
+    - 80.5
+    - 85.4
+  - - 2005
+    - total sale
+    - 18.3
+    - 23.7
+    - 18.5
+    - 19.5
+    - 14.6
+  - - 2007
+    - marijuana possession
+    - 42.1
+    - 44.2
+    - 53.1
+    - 47.9
+    - 29.6
+  - - 2007
+    - marijuana sale
+    - 5.3
+    - 5.7
+    - 7.7
+    - 4.6
+    - 4.7
+  - - 2007
+    - total possession
+    - 82.5
+    - 77.5
+    - 81.7
+    - 82.9
+    - 85.0
+  - - 2007
+    - total sale
+    - 17.5
+    - 22.5
+    - 18.3
+    - 17.1
+    - 15.0
+  - - 2009
+    - marijuana possession
+    - 45.6
+    - 47.0
+    - 52.8
+    - 51.3
+    - 34.3
+  - - 2009
+    - marijuana sale
+    - 6.0
+    - 6.3
+    - 8.9
+    - 5.0
+    - 5.7
+  - - 2009
+    - total possession
+    - 81.6
+    - 77.7
+    - 80.2
+    - 82.3
+    - 83.6
+  - - 2009
+    - total sale
+    - 18.4
+    - 22.3
+    - 19.8
+    - 17.7
+    - 16.4
+  - - 2011
+    - marijuana possession
+    - 43.3
+    - 48.5
+    - 52.1
+    - 51.3
+    - 23.5
+  - - 2011
+    - marijuana sale
+    - 6.2
+    - 6.5
+    - 9.22
+    - 5.0
+    - 5.7
+  - - 2011
+    - total possession
+    - 81.8
+    - 78.2
+    - 80.6
+    - 82.7
+    - 83.4
+  - - 2011
+    - total sale
+    - 18.2
+    - 21.8
+    - 19.4
+    - 17.2
+    - 16.6
+  - - 2012
+    - marijuana possession
+    - 42.4
+    - 46.9
+    - 51.9
+    - 51.0
+    - 22.1
+  - - 2012
+    - marijuana sale
+    - 5.9
+    - 6.1
+    - 8.8
+    - 5.1
+    - 5.2
+  - - 2012
+    - total possession
+    - 82.2
+    - 78.8
+    - 81.2
+    - 82.6
+    - 84.5
+  - - 2012
+    - total sale
+    - 17.8
+    - 21.2
+    - 18.8
+    - 17.4
+    - 15.5
+
+---
+state:
+  columns:
+  - name
+  - year
+  - num_agencies
+  - est_pop
+  - region
+  records: 
+  - - Alabama
+    - 2005
+    - 255
+    - 3227681
+    - South
+  - - Alabama
+    - 2007
+    - 287
+    - 3482050
+    - South
+  - - Alabama
+    - 2009
+    - 306
+    - 3682108
+    - South
+  - - Alabama
+    - 2011
+    - 1
+    - 82012
+    - South
+  - - Alabama
+    - 2012
+    - 1
+    - 82332
+    - South
+  - - Alaska
+    - 2005
+    - 32
+    - 643085
+    - West
+  - - Alaska
+    - 2007
+    - 30
+    - 654555
+    - West
+  - - Alaska
+    - 2009
+    - 33
+    - 682496
+    - West
+  - - Alaska
+    - 2011
+    - 32
+    - 714559
+    - West
+  - - Alaska
+    - 2012
+    - 30
+    - 464937
+    - West
+  - - Arizona
+    - 2005
+    - 84
+    - 5350364
+    - West
+  - - Arizona
+    - 2007
+    - 78
+    - 5941252
+    - West
+  - - Arizona
+    - 2009
+    - 89
+    - 6505613
+    - West
+  - - Arizona
+    - 2011
+    - 85
+    - 6128057
+    - West
+  - - Arizona
+    - 2012
+    - 80
+    - 5945274
+    - West
+  - - Arkansas
+    - 2005
+    - 156
+    - 2154095
+    - South
+  - - Arkansas
+    - 2007
+    - 210
+    - 1875132
+    - South
+  - - Arkansas
+    - 2009
+    - 228
+    - 2470159
+    - South
+  - - Arkansas
+    - 2011
+    - 189
+    - 2163737
+    - South
+  - - Arkansas
+    - 2012
+    - 212
+    - 2510046
+    - South
+  - - California
+    - 2005
+    - 627
+    - 35908932
+    - West
+  - - California
+    - 2007
+    - 634
+    - 35715843
+    - West
+  - - California
+    - 2009
+    - 692
+    - 36772788
+    - West
+  - - California
+    - 2011
+    - 619
+    - 37483185
+    - West
+  - - California
+    - 2012
+    - 685
+    - 37416909
+    - West
+  - - Colorado
+    - 2005
+    - 185
+    - 4304012
+    - West
+  - - Colorado
+    - 2007
+    - 189
+    - 4358882
+    - West
+  - - Colorado
+    - 2009
+    - 204
+    - 4524405
+    - West
+  - - Colorado
+    - 2011
+    - 180
+    - 4644849
+    - West
+  - - Colorado
+    - 2012
+    - 204
+    - 4700965
+    - West
+  - - Connecticut
+    - 2005
+    - 91
+    - 3084326
+    - Northeast
+  - - Connecticut
+    - 2007
+    - 94
+    - 3243990
+    - Northeast
+  - - Connecticut
+    - 2009
+    - 102
+    - 3518288
+    - Northeast
+  - - Connecticut
+    - 2011
+    - 99
+    - 3509272
+    - Northeast
+  - - Connecticut
+    - 2012
+    - 97
+    - 3388202
+    - Northeast
+  - - Delaware
+    - 2005
+    - 50
+    - 843524
+    - South
+  - - Delaware
+    - 2007
+    - 53
+    - 853712
+    - South
+  - - Delaware
+    - 2009
+    - 54
+    - 884338
+    - South
+  - - Delaware
+    - 2011
+    - 55
+    - 907135
+    - South
+  - - Delaware
+    - 2012
+    - 52
+    - 916825
+    - South
+  - - Florida
+    - 2005
+    - 602
+    - 17758612
+    - South
+  - - Florida
+    - 2007
+    - 592
+    - 18207878
+    - South
+  - - Florida
+    - 2009
+    - 593
+    - 18514171
+    - South
+  - - Florida
+    - 2011
+    - 678
+    - 19052717
+    - South
+  - - Florida
+    - 2012
+    - 618
+    - 19290951
+    - South
+  - - Georgia
+    - 2005
+    - 179
+    - 3341353
+    - South
+  - - Georgia
+    - 2007
+    - 308
+    - 5916753
+    - South
+  - - Georgia
+    - 2009
+    - 351
+    - 6766841
+    - South
+  - - Georgia
+    - 2011
+    - 422
+    - 9214519
+    - South
+  - - Georgia
+    - 2012
+    - 422
+    - 8827198
+    - South
+  - - Hawaii
+    - 2005
+    - 2
+    - 1048094
+    - West
+  - - Hawaii
+    - 2007
+    - 3
+    - 1150076
+    - West
+  - - Hawaii
+    - 2009
+    - 3
+    - 1150076
+    - West
+  - - Hawaii
+    - 2011
+    - 1
+    - 158760
+    - West
+  - - Hawaii
+    - 2012
+    - 1
+    - 158760
+    - West
+  - - Idaho
+    - 2005
+    - 71
+    - 906893
+    - West
+  - - Idaho
+    - 2007
+    - 99
+    - 1382317
+    - West
+  - - Idaho
+    - 2009
+    - 103
+    - 1519531
+    - West
+  - - Idaho
+    - 2011
+    - 102
+    - 1493662
+    - West
+  - - Idaho
+    - 2012
+    - 102
+    - 1582856
+    - West
+  - - Illinois
+    - 2005
+    - 1
+    - 2873441
+    - Midwest
+  - - Illinois
+    - 2007
+    - 2
+    - 2980147
+    - Midwest
+  - - Illinois
+    - 2009
+    - 2
+    - 3006374
+    - Midwest
+  - - Illinois
+    - 2011
+    - 2
+    - 2857044
+    - Midwest
+  - - Illinois
+    - 2012
+    - 2
+    - 2860675
+    - Midwest
+  - - Indiana
+    - 2005
+    - 158
+    - 4680394
+    - Midwest
+  - - Indiana
+    - 2007
+    - 155
+    - 4535059
+    - Midwest
+  - - Indiana
+    - 2009
+    - 159
+    - 4679770
+    - Midwest
+  - - Indiana
+    - 2011
+    - 169
+    - 4962299
+    - Midwest
+  - - Indiana
+    - 2012
+    - 149
+    - 4176156
+    - Midwest
+  - - Iowa
+    - 2005
+    - 190
+    - 2640488
+    - Midwest
+  - - Iowa
+    - 2007
+    - 180
+    - 2567706
+    - Midwest
+  - - Iowa
+    - 2009
+    - 193
+    - 2756917
+    - Midwest
+  - - Iowa
+    - 2011
+    - 185
+    - 2685953
+    - Midwest
+  - - Iowa
+    - 2012
+    - 191
+    - 2706862
+    - Midwest
+  - - Kansas
+    - 2005
+    - 219
+    - 1296042
+    - Midwest
+  - - Kansas
+    - 2007
+    - 217
+    - 1783134
+    - Midwest
+  - - Kansas
+    - 2009
+    - 188
+    - 1813396
+    - Midwest
+  - - Kansas
+    - 2011
+    - 244
+    - 2017057
+    - Midwest
+  - - Kansas
+    - 2012
+    - 232
+    - 2066137
+    - Midwest
+  - - Kentucky
+    - 2005
+    - 198
+    - 2677931
+    - South
+  - - Kentucky
+    - 2007
+    - 11
+    - 850422
+    - South
+  - - Kentucky
+    - 2009
+    - 235
+    - 2295577
+    - South
+  - - Kentucky
+    - 2011
+    - 359
+    - 4103435
+    - South
+  - - Kentucky
+    - 2012
+    - 362
+    - 4192532
+    - South
+  - - Louisiana
+    - 2005
+    - 105
+    - 2450103
+    - South
+  - - Louisiana
+    - 2007
+    - 107
+    - 2617038
+    - South
+  - - Louisiana
+    - 2009
+    - 118
+    - 2410236
+    - South
+  - - Louisiana
+    - 2011
+    - 110
+    - 2433299
+    - South
+  - - Louisiana
+    - 2012
+    - 102
+    - 2304044
+    - South
+  - - Maine
+    - 2005
+    - 149
+    - 1302517
+    - Northeast
+  - - Maine
+    - 2007
+    - 163
+    - 1314909
+    - Northeast
+  - - Maine
+    - 2009
+    - 164
+    - 1316989
+    - Northeast
+  - - Maine
+    - 2011
+    - 163
+    - 1324187
+    - Northeast
+  - - Maine
+    - 2012
+    - 179
+    - 1325207
+    - Northeast
+  - - Maryland
+    - 2005
+    - 138
+    - 5524635
+    - South
+  - - Maryland
+    - 2007
+    - 154
+    - 5562657
+    - South
+  - - Maryland
+    - 2009
+    - 149
+    - 5674380
+    - South
+  - - Maryland
+    - 2011
+    - 134
+    - 4810360
+    - South
+  - - Maryland
+    - 2012
+    - 150
+    - 5351617
+    - South
+  - - Massachusetts
+    - 2005
+    - 298
+    - 4927398
+    - Northeast
+  - - Massachusetts
+    - 2007
+    - 323
+    - 5899072
+    - Northeast
+  - - Massachusetts
+    - 2009
+    - 328
+    - 6130470
+    - Northeast
+  - - Massachusetts
+    - 2011
+    - 313
+    - 5972351
+    - Northeast
+  - - Massachusetts
+    - 2012
+    - 302
+    - 6123817
+    - Northeast
+  - - Michigan
+    - 2005
+    - 536
+    - 9807849
+    - Midwest
+  - - Michigan
+    - 2007
+    - 513
+    - 9301438
+    - Midwest
+  - - Michigan
+    - 2009
+    - 568
+    - 9569737
+    - Midwest
+  - - Michigan
+    - 2011
+    - 504
+    - 8768968
+    - Midwest
+  - - Michigan
+    - 2012
+    - 535
+    - 9159042
+    - Midwest
+  - - Minnesota
+    - 2005
+    - 329
+    - 4836926
+    - Midwest
+  - - Minnesota
+    - 2007
+    - 318
+    - 5078367
+    - Midwest
+  - - Minnesota
+    - 2009
+    - 320
+    - 5094567
+    - Midwest
+  - - Minnesota
+    - 2011
+    - 325
+    - 5344861
+    - Midwest
+  - - Minnesota
+    - 2012
+    - 322
+    - 4698199
+    - Midwest
+  - - Mississippi
+    - 2005
+    - 98
+    - 1460530
+    - South
+  - - Mississippi
+    - 2007
+    - 79
+    - 1082611
+    - South
+  - - Mississippi
+    - 2009
+    - 94
+    - 1630766
+    - South
+  - - Mississippi
+    - 2011
+    - 93
+    - 1675272
+    - South
+  - - Mississippi
+    - 2012
+    - 91
+    - 1535347
+    - South
+  - - Missouri
+    - 2005
+    - 168
+    - 3655659
+    - Midwest
+  - - Missouri
+    - 2007
+    - 580
+    - 4980958
+    - Midwest
+  - - Missouri
+    - 2009
+    - 385
+    - 5543053
+    - Midwest
+  - - Missouri
+    - 2011
+    - 401
+    - 5667706
+    - Midwest
+  - - Missouri
+    - 2012
+    - 385
+    - 5612383
+    - Midwest
+  - - Montana
+    - 2005
+    - 68
+    - 776834
+    - Midwest
+  - - Montana
+    - 2007
+    - 83
+    - 803145
+    - Midwest
+  - - Montana
+    - 2009
+    - 96
+    - 905870
+    - Midwest
+  - - Montana
+    - 2011
+    - 92
+    - 898221
+    - Midwest
+  - - Montana
+    - 2012
+    - 93
+    - 949729
+    - Midwest
+  - - Nebraska
+    - 2005
+    - 214
+    - 1590291
+    - Midwest
+  - - Nebraska
+    - 2007
+    - 216
+    - 1506881
+    - Midwest
+  - - Nebraska
+    - 2009
+    - 201
+    - 1591339
+    - Midwest
+  - - Nebraska
+    - 2011
+    - 205
+    - 1658043
+    - Midwest
+  - - Nebraska
+    - 2012
+    - 211
+    - 1691152
+    - Midwest
+  - - Nevada
+    - 2005
+    - 32
+    - 2410942
+    - West
+  - - Nevada
+    - 2007
+    - 30
+    - 2467618
+    - West
+  - - Nevada
+    - 2009
+    - 33
+    - 2546856
+    - West
+  - - Nevada
+    - 2011
+    - 23
+    - 2432857
+    - West
+  - - Nevada
+    - 2012
+    - 30
+    - 2749103
+    - West
+  - - New Hampshire
+    - 2005
+    - 131
+    - 1081410
+    - Northeast
+  - - New Hampshire
+    - 2007
+    - 131
+    - 891903
+    - Northeast
+  - - New Hampshire
+    - 2009
+    - 151
+    - 1160414
+    - Northeast
+  - - New Hampshire
+    - 2011
+    - 133
+    - 1029821
+    - Northeast
+  - - New Hampshire
+    - 2012
+    - 148
+    - 1167974
+    - Northeast
+  - - New Jersey
+    - 2005
+    - 540
+    - 8389085
+    - Northeast
+  - - New Jersey
+    - 2007
+    - 539
+    - 8421399
+    - Northeast
+  - - New Jersey
+    - 2009
+    - 508
+    - 8522309
+    - Northeast
+  - - New Jersey
+    - 2011
+    - 577
+    - 8760229
+    - Northeast
+  - - New Jersey
+    - 2012
+    - 496
+    - 8637883
+    - Northeast
+  - - New Mexico
+    - 2005
+    - 52
+    - 1429002
+    - West
+  - - New Mexico
+    - 2007
+    - 58
+    - 1391131
+    - West
+  - - New Mexico
+    - 2009
+    - 67
+    - 1531579
+    - West
+  - - New Mexico
+    - 2011
+    - 87
+    - 1988459
+    - West
+  - - New Mexico
+    - 2012
+    - 67
+    - 1767251
+    - West
+  - - New York
+    - 2005
+    - 561
+    - 9800300
+    - Northeast
+  - - New York
+    - 2007
+    - 611
+    - 10520724
+    - Northeast
+  - - New York
+    - 2009
+    - 530
+    - 10719319
+    - Northeast
+  - - New York
+    - 2011
+    - 506
+    - 9114359
+    - Northeast
+  - - New York
+    - 2012
+    - 487
+    - 10798302
+    - Northeast
+  - - North Carolina
+    - 2005
+    - 348
+    - 7455705
+    - South
+  - - North Carolina
+    - 2007
+    - 303
+    - 6998327
+    - South
+  - - North Carolina
+    - 2009
+    - 322
+    - 6933046
+    - South
+  - - North Carolina
+    - 2011
+    - 375
+    - 9281220
+    - South
+  - - North Carolina
+    - 2012
+    - 333
+    - 8780316
+    - South
+  - - North Dakota
+    - 2005
+    - 63
+    - 549686
+    - Midwest
+  - - North Dakota
+    - 2007
+    - 63
+    - 562723
+    - Midwest
+  - - North Dakota
+    - 2009
+    - 81
+    - 611734
+    - Midwest
+  - - North Dakota
+    - 2011
+    - 77
+    - 645706
+    - Midwest
+  - - North Dakota
+    - 2012
+    - 91
+    - 685149
+    - Midwest
+  - - Ohio
+    - 2005
+    - 342
+    - 6557771
+    - Midwest
+  - - Ohio
+    - 2007
+    - 374
+    - 6848511
+    - Midwest
+  - - Ohio
+    - 2009
+    - 414
+    - 8137156
+    - Midwest
+  - - Ohio
+    - 2011
+    - 439
+    - 8496426
+    - Midwest
+  - - Ohio
+    - 2012
+    - 416
+    - 7192479
+    - Midwest
+  - - Oklahoma
+    - 2005
+    - 281
+    - 3345709
+    - South
+  - - Oklahoma
+    - 2007
+    - 292
+    - 3615869
+    - South
+  - - Oklahoma
+    - 2009
+    - 300
+    - 3526827
+    - South
+  - - Oklahoma
+    - 2011
+    - 291
+    - 3489895
+    - South
+  - - Oklahoma
+    - 2012
+    - 304
+    - 3589287
+    - South
+  - - Oregon
+    - 2005
+    - 153
+    - 3431463
+    - West
+  - - Oregon
+    - 2007
+    - 145
+    - 3522777
+    - West
+  - - Oregon
+    - 2009
+    - 154
+    - 3612440
+    - West
+  - - Oregon
+    - 2011
+    - 137
+    - 3694895
+    - West
+  - - Oregon
+    - 2012
+    - 128
+    - 3610267
+    - West
+  - - Pennsylvania
+    - 2005
+    - 796
+    - 10564202
+    - Northeast
+  - - Pennsylvania
+    - 2007
+    - 930
+    - 11408646
+    - Northeast
+  - - Pennsylvania
+    - 2009
+    - 1
+    - 11813884
+    - Northeast
+  - - Pennsylvania
+    - 2011
+    - 1
+    - 11798317
+    - Northeast
+  - - Pennsylvania
+    - 2012
+    - 1
+    - 12251464
+    - Northeast
+  - - Rhode Island
+    - 2005
+    - 45
+    - 871688
+    - Northeast
+  - - Rhode Island
+    - 2007
+    - 41
+    - 876018
+    - Northeast
+  - - Rhode Island
+    - 2009
+    - 46
+    - 1018309
+    - Northeast
+  - - Rhode Island
+    - 2011
+    - 47
+    - 873472
+    - Northeast
+  - - Rhode Island
+    - 2012
+    - 47
+    - 1044186
+    - Northeast
+  - - South Carolina
+    - 2005
+    - 264
+    - 3865027
+    - South
+  - - South Carolina
+    - 2007
+    - 479
+    - 4179455
+    - South
+  - - South Carolina
+    - 2009
+    - 432
+    - 4397223
+    - South
+  - - South Carolina
+    - 2011
+    - 251
+    - 4209115
+    - South
+  - - South Carolina
+    - 2012
+    - 306
+    - 4112716
+    - South
+  - - South Dakota
+    - 2005
+    - 47
+    - 281739
+    - Midwest
+  - - South Dakota
+    - 2007
+    - 89
+    - 388719
+    - Midwest
+  - - South Dakota
+    - 2009
+    - 105
+    - 674759
+    - Midwest
+  - - South Dakota
+    - 2011
+    - 106
+    - 686820
+    - Midwest
+  - - South Dakota
+    - 2012
+    - 111
+    - 747870
+    - Midwest
+  - - Tennessee
+    - 2005
+    - 374
+    - 4642765
+    - South
+  - - Tennessee
+    - 2007
+    - 394
+    - 4848243
+    - South
+  - - Tennessee
+    - 2009
+    - 386
+    - 4889352
+    - South
+  - - Tennessee
+    - 2011
+    - 446
+    - 6086443
+    - South
+  - - Tennessee
+    - 2012
+    - 438
+    - 5863606
+    - South
+  - - Texas
+    - 2005
+    - 965
+    - 22040153
+    - South
+  - - Texas
+    - 2007
+    - 941
+    - 21758415
+    - South
+  - - Texas
+    - 2009
+    - 996
+    - 24280041
+    - South
+  - - Texas
+    - 2011
+    - 1
+    - 23937315
+    - South
+  - - Texas
+    - 2012
+    - 989
+    - 25224224
+    - South
+  - - Utah
+    - 2005
+    - 85
+    - 2096365
+    - West
+  - - Utah
+    - 2007
+    - 103
+    - 2316297
+    - West
+  - - Utah
+    - 2009
+    - 121
+    - 2747172
+    - West
+  - - Utah
+    - 2011
+    - 79
+    - 1230046
+    - West
+  - - Utah
+    - 2012
+    - 125
+    - 2794195
+    - West
+  - - Vermont
+    - 2005
+    - 64
+    - 539008
+    - Northeast
+  - - Vermont
+    - 2007
+    - 78
+    - 608835
+    - Northeast
+  - - Vermont
+    - 2009
+    - 77
+    - 605536
+    - Northeast
+  - - Vermont
+    - 2011
+    - 61
+    - 456140
+    - Northeast
+  - - Vermont
+    - 2012
+    - 76
+    - 557989
+    - Northeast
+  - - Virginia
+    - 2005
+    - 356
+    - 5825978
+    - South
+  - - Virginia
+    - 2007
+    - 334
+    - 7325924
+    - South
+  - - Virginia
+    - 2009
+    - 380
+    - 7481379
+    - South
+  - - Virginia
+    - 2011
+    - 323
+    - 8003311
+    - South
+  - - Virginia
+    - 2012
+    - 410
+    - 8178905
+    - South
+  - - Washington
+    - 2005
+    - 221
+    - 5417774
+    - West
+  - - Washington
+    - 2007
+    - 214
+    - 4877122
+    - West
+  - - Washington
+    - 2009
+    - 208
+    - 4880479
+    - West
+  - - Washington
+    - 2011
+    - 189
+    - 3886312
+    - West
+  - - Washington
+    - 2012
+    - 192
+    - 5173068
+    - West
+  - - West Virginia
+    - 2005
+    - 347
+    - 1545865
+    - South
+  - - West Virginia
+    - 2007
+    - 275
+    - 1400508
+    - South
+  - - West Virginia
+    - 2009
+    - 201
+    - 925274
+    - South
+  - - West Virginia
+    - 2011
+    - 247
+    - 1498772
+    - South
+  - - West Virginia
+    - 2012
+    - 256
+    - 1357601
+    - South
+  - - Wisconsin
+    - 2005
+    - 243
+    - 3769639
+    - Midwest
+  - - Wisconsin
+    - 2007
+    - 366
+    - 5484944
+    - Midwest
+  - - Wisconsin
+    - 2009
+    - 359
+    - 5389299
+    - Midwest
+  - - Wisconsin
+    - 2011
+    - 342
+    - 5284971
+    - Midwest
+  - - Wisconsin
+    - 2012
+    - 359
+    - 5373766
+    - Midwest
+  - - Wyoming
+    - 2005
+    - 62
+    - 497656
+    - West
+  - - Wyoming
+    - 2007
+    - 61
+    - 516496
+    - West
+  - - Wyoming
+    - 2009
+    - 63
+    - 539500
+    - West
+  - - Wyoming
+    - 2011
+    - 61
+    - 548033
+    - West
+  - - Wyoming
+    - 2012
+    - 56
+    - 520353
+    - West
