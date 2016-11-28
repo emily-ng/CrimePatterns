@@ -1,0 +1,46 @@
+<h2>States</h2>
+
+<table>
+  <tr>
+    <th>State</th>
+    <th>Year    .</th>
+    <th>Num. Agencies</th>
+    <th>Est. Population</th>
+    <th>Region</th>
+  </tr>
+  <% @states.each do |state| %>
+    <tr>
+      <td><%= state.name %></td>
+      <td><%= state.year %></td>
+      <td><%= state.num_agencies %></td>
+      <td><%= state.est_pop %></td>
+      <td><%= state.region %></td>
+    </tr>
+  <% end %>
+
+</table>
+
+<br>
+
+<h2>Arrests 2012</h2>
+<table>
+  <tr>
+    <th>State</th>
+    <th>Age</th>
+    <th>Total All</th>
+    <th>Violent Crime</th>
+    <th>Property Crime</th>
+    <th>Drug Abuse Violations</th>
+  </tr>
+  <% @arrests_2012.each do |arrest| %>
+    <tr>
+      <td><%= arrest.state %></td>
+      <td><%= arrest.age %></td>
+      <td><%= arrest.total_all %></td>
+      <td><%= arrest.violent_crime %></td>
+      <td><%= arrest.property_crime %></td>
+      <td><%= arrest.drug_abuse_violations %></td>
+    </tr>
+  <% end %>
+
+</table>

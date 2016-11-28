@@ -1,25 +1,10 @@
 <h1>Page#index</h1>
 <p>Find me in app/views/page/index.html.erb</p>
 
-<h2>(Successful Table Dump)</h2>
-<table>
-  <tr>
-    <th>State</th>
-    <th>Year    .</th>
-    <th>Num. Agencies</th>
-    <th>Est. Population</th>
-    <th>Region</th>
-  </tr>
- 
- 
-  <% @states.each do |state| %>
-    <tr>
-      <td><%= state.name %></td>
-      <td><%= state.year %></td>
-      <td><%= state.num_agencies %></td>
-      <td><%= state.est_pop %></td>
-      <td><%= state.region %></td>
-    </tr>
-  <% end %>
-
-</table>
+<h2>Search for data related to Alabama!</h2>
+<br>
+<%= form_tag("/", method: "get") do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Submit") %>
+<% end %>
