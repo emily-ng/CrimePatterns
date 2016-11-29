@@ -1,7 +1,7 @@
 class PageController < ApplicationController
 
   def index
-
+  	@s = States.all;
   	if params[:q].present?
   		@result = {}
 	   	 States.where(name: params[:q]).each do |aa|

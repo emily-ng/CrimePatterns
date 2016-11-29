@@ -11,3 +11,28 @@
   <%= submit_tag("Submit") %>
 <% end %>
 
+
+<h4>Year</h4>
+<select name="year_dropdown">
+  <%= @s.group(:year).each do |ss| %>
+    <option value="<%= ss.year%>"><%= ss.year %></option>
+  <% end %>
+</select>
+
+<!--this dropdown is hardcoded because we only have a few crime types-->
+<h4>Crime</h4>
+<select name="crime_dropdown">
+    <option value="violent_crime">violent</option>
+    <option value="property_crime">property</option>
+    <option value="marijuana_crime">marijuana</option>
+</select>
+
+<h4>State</h4>
+<select name="state_dropdown">
+  <%= @s.group(:name).each do |ss| %>
+    <option value="<%= ss.name %>"><%= ss.name %></option>
+  <% end %>
+</select>
+
+
+
