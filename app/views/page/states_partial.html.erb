@@ -1,6 +1,6 @@
-<h2>Chart (from states table)</h2>
+<h2>Data about <%=params[:q].capitalize%></h2>
 
-<%= line_chart(@result, min: 0, height: "800px", width: "1200px") %>
+<%= line_chart(@result, min: 0, xtitle: "Year", ytitle: "Violent Crime per Capita", height: "800px", width: "1200px") %>
 
 <h2>States</h2>
 <table>

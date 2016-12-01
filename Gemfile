@@ -23,6 +23,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'bootstrap-sass'
 #For charts
 gem 'chartkick'
+#For prying things
+gem 'pry'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
