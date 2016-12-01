@@ -5,9 +5,6 @@ class PageController < ApplicationController
   	@violent_hash = {}
   	@property_hash = {}
   	@drug_hash = {}
- 	if params[:year].present?
-	   binding.pry
-	end
   	if params[:q].present?
 	   	 States.where(name: params[:q]).each do |ss|
 	   		if ss.year==2005
@@ -49,6 +46,9 @@ class PageController < ApplicationController
   		@arrests_2012 = Arrests_2012.find_by_sql(["SELECT* FROM arrests_by_state_2012 WHERE arrests_by_state_2012.state = ?", params[:q]]);
   		render "states_partial"
   	end
+  	if params[:year].present?
+	   render "comparison_partial"
+	end
 
   end
 
