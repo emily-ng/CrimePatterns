@@ -1,6 +1,13 @@
 <h2>Data about <%=params[:q].capitalize%></h2>
 
-<%= line_chart(@result, min: 0, xtitle: "Year", ytitle: "Violent Crime per Capita", height: "800px", width: "1200px") %>
+<%= line_chart [
+  {name: "Violent Crime", data: @violent_hash},
+  {name: "Property Crime", data: @property_hash},
+  {name: "Drug Abuse Violations", data: @drug_hash}
+  ], 
+  min: 0, xtitle: "Year", ytitle: "Per Capita (per 100,000)", height: "600px", width: "1200px" %>
+
+
 
 <h2>States</h2>
 <table>
