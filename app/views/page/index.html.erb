@@ -11,36 +11,14 @@
   <%= submit_tag("Submit") %>
 <% end %>
 
-
-<h4>Year</h4>
-<select name="year_dropdown">
-  <%= @s.group(:year).each do |ss| %>
-    <option value="<%= ss.year%>"><%= ss.year %></option>
-  <% end %>
-</select>
-
-<!--this dropdown is hardcoded because we only have a few crime types-->
-<h4>Crime1</h4>
-<select name="crime_dropdown1">
-    <option value="violent_crime">violent</option>
-    <option value="property_crime">property</option>
-    <option value="marijuana_crime">marijuana</option>
-</select>
-
-<!--this dropdown is hardcoded because we only have a few crime types-->
-<h4>Crime2</h4>
-<select name="crime_dropdown2">
-    <option value="violent_crime">violent</option>
-    <option value="property_crime">property</option>
-    <option value="marijuana_crime">marijuana</option>
-</select>
-
-<h4>State</h4>
-<select name="state_dropdown">
-  <%= @s.group(:name).each do |ss| %>
-    <option value="<%= ss.name %>"><%= ss.name %></option>
-  <% end %>
-</select>
+<h2>Compare States</h2>
+<%= form_tag("/", method: "get") do %>
+  	<%= select_tag(:year, options_for_select([2005,2007,2009,2011,2012]))%>
+  	<%= select_tag(:crime, options_for_select(["violent","property","drug"]))%>
+  	<%= select_tag(:state1, options_for_select(@s.group(:name).collect{|ss| [ss.name]}))%>
+  	<%= select_tag(:state2, options_for_select(@s.group(:name).collect{|ss| [ss.name]}))%>
+	<%= submit_tag("Submit") %>
+<% end %>
 
 
 
