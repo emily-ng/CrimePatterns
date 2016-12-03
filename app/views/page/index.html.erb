@@ -7,18 +7,24 @@
 <br>
 <%= form_tag("/", method: "get") do %>
   <%= label_tag(:q, "Search for:") %>
-  <%= text_field_tag(:q) %>
+  <%= select_tag(:q, options_for_select(@s.group(:name).collect{|ss| [ss.name]}))%>
   <%= submit_tag("Submit") %>
 <% end %>
 
 <h2>Compare states and data about their drug violations and crime rates</h2>
 <%= form_tag("/", method: "get") do %>
   	<%= select_tag(:year, options_for_select([2005,2007,2009,2011,2012]))%>
-  	<%= select_tag(:crime, options_for_select(["violent","property","drug"]))%>
+  	<%= select_tag(:crime, options_for_select(["Violent","Property","Drug"]))%>
   	<%= select_tag(:state1, options_for_select(@s.group(:name).collect{|ss| [ss.name]}))%>
   	<%= select_tag(:state2, options_for_select(@s.group(:name).collect{|ss| [ss.name]}))%>
 	<%= submit_tag("Submit") %>
 <% end %>
 
-
+<h2>Find the top 10 states (per 100,000 capita)</h2>
+<%= form_tag("/", method: "get") do %>
+  	<%= select_tag(:rank_year, options_for_select([2005,2007,2009,2011,2012]))%>
+  	<%= select_tag(:rank_crime, options_for_select(["Violent","Property","Drug"]))%>
+  	<%= select_tag(:hi_lo, options_for_select(["Highest","Lowest"]))%>
+	<%= submit_tag("Submit") %>
+<% end %>
 
