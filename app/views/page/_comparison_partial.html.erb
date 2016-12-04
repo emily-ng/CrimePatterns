@@ -1,1 +1,7 @@
-<h2>TODO: This would be a chart comparing data from different states and different tables<h2>
+<h2>Comparison of <%=params[:comparison_crime]%> crime betweeen <%=params[:state1].upcase%> and <%=params[:state2].upcase%> </h2>
+
+<%= line_chart [
+  {name: params[:state1], data: @compare1_hash},
+  {name: params[:state2], data: @compare2_hash}
+  ], 
+  min: 0, xtitle: "Year", ytitle: "Per Capita (per 100,000)", height: "600px", width: "1200px" %>
