@@ -44,9 +44,6 @@ class PageController < ApplicationController
 	     	@drug_hash[ss.year] = percapita_drug
 	   	 end
 	   	
-  		@states = States.find_by_sql(["SELECT* FROM state WHERE state.name = ?", params[:q]]);
-  		@arrests_2012 = Arrests_2012.find_by_sql(["SELECT* FROM arrests_by_state_2012 WHERE arrests_by_state_2012.state = ?", params[:q]]);
-		
   		render "_states_partial"
   	end
 
@@ -168,7 +165,37 @@ class PageController < ApplicationController
 		end			
 	end
 
-
+	if params[:scatter_year].present?
+		case params[:scatter_year]
+		when "2005"
+			scatter = Arrests_2005.find_by_sql([
+					"SELECT distinct a.state, a.violent_crime, a.drug_abuse_violations FROM arrests_by_state_2005 a WHERE a.age = 'Total all ages'"
+					])
+		when "2007"
+			scatter = Arrests_2007.find_by_sql([
+					"SELECT distinct a.state, a.violent_crime, a.drug_abuse_violations FROM arrests_by_state_2007 a WHERE a.age = 'Total all ages'"
+					])			
+		when "2009"
+			scatter = Arrests_2009.find_by_sql([
+					"SELECT distinct a.state, a.violent_crime, a.drug_abuse_violations FROM arrests_by_state_2009 a WHERE a.age = 'Total all ages'"
+					])		
+		when "2011"
+			scatter = Arrests_2011.find_by_sql([
+					"SELECT distinct a.state, a.violent_crime, a.drug_abuse_violations FROM arrests_by_state_2011 a WHERE a.age = 'Total all ages'"
+					])
+		when "2012"
+			scatter = Arrests_2012.find_by_sql([
+					"SELECT distinct a.state, a.violent_crime, a.drug_abuse_violations FROM arrests_by_state_2012 a WHERE a.age = 'Total all ages'"
+					])
+		end
+		scatter.collect { |a|
+			pop = States.find_by_sql(["SELECT est_pop FROM state WHERE state.year = ? AND state.name = ?",params[:scatter_year], a.state]);
+				a.violent_crime = (a.violent_crime.to_f/pop.first.est_pop)*100000				
+				a.drug_abuse_violations = (a.drug_abuse_violations.to_f/pop.first.est_pop)*100000		
+		}	
+		@final_scatter = scatter
+		render "_scatter_partial"
+	end
 
   end
 end

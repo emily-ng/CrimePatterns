@@ -1,0 +1,2 @@
+<h2>Scatter Plot for <%=params[:scatter_year]%></h2>
+<%= scatter_chart @final_scatter.pluck(:drug_abuse_violations, :violent_crime), xtitle: "Drug Abuse Violations Per Capita", ytitle: "Violent Crime Per Capita" %>
