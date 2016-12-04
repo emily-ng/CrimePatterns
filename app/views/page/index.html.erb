@@ -3,7 +3,7 @@
 <p>Find me in app/views/page/index.html.erb</p>
 -->
 
-<h1>Search for drug and crime data related to a state!</h1>
+<h1>Search for drug and crime data related to a state! (Make this a dropdown)</h1>
 <br>
 <%= form_tag("/", method: "get") do %>
   <%= label_tag(:q, "Search for:") %>
@@ -13,12 +13,13 @@
 
 <h2>Compare states and data about their drug violations and crime rates</h2>
 <%= form_tag("/", method: "get") do %>
-  	<%= select_tag(:year, options_for_select([2005,2007,2009,2011,2012]))%>
-  	<%= select_tag(:crime, options_for_select(["violent","property","drug"]))%>
+  	<%= select_tag(:comparison_crime, options_for_select(["violent","property","drug"]))%>
   	<%= select_tag(:state1, options_for_select(@s.group(:name).collect{|ss| [ss.name]}))%>
   	<%= select_tag(:state2, options_for_select(@s.group(:name).collect{|ss| [ss.name]}))%>
 	<%= submit_tag("Submit") %>
 <% end %>
+
+
 
 
 
