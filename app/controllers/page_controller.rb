@@ -47,303 +47,125 @@ class PageController < ApplicationController
   		@states = States.find_by_sql(["SELECT* FROM state WHERE state.name = ?", params[:q]]);
   		@arrests_2012 = Arrests_2012.find_by_sql(["SELECT* FROM arrests_by_state_2012 WHERE arrests_by_state_2012.state = ?", params[:q]]);
 		
-  		render "states_partial"
+  		render "_states_partial"
   	end
 
   	#COMPARISON FORM
   	if params[:comaprison_crime].present?
-	   render "comparison_partial"
+	   render "_comparison_partial"
 	end
 
 	#RANKING FORM
-	if params[:ranking_year].present?
-		case params[:ranking_year]
+	if params[:rank_year].present?
+		case params[:rank_year]
 		when "2005"
-			if params[:ranking_crime] == "violent" 
-				if params[:rank] == "top" 
-					@top10_violent2005 = Arrests_2005.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.violent_crime/s.est_pop)*100000 as vio_percap
-					FROM project_db_instance.arrests_by_state_2005 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2005'
-					GROUP BY vio_percap desc
-					LIMIT 10"]); 
-				else
-					@bottom10_violent2005 = Arrests_2005.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.violent_crime/s.est_pop)*100000 as vio_percap
-					FROM project_db_instance.arrests_by_state_2005 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2005'
-					GROUP BY vio_percap asc
-					LIMIT 10"]);
-				end
-			elsif params[:ranking_crime] == "property" 
-					@top10_property2005 = Arrests_2005.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.property_crime/s.est_pop)*100000 as prop_percap
-					FROM project_db_instance.arrests_by_state_2005 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2005'
-					GROUP BY prop_percap desc
-					LIMIT 10"]); 
-					@bottom10_property2005 = Arrests_2005.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.property_crime/s.est_pop)*100000 as prop_percap
-					FROM project_db_instance.arrests_by_state_2005 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2005'
-					GROUP BY prop_percap asc
-					LIMIT 10"]); 
+			if params[:rank_crime] == "Violent" 
+					rank = Arrests_2005.find_by_sql([
+						"SELECT distinct a.state, a.violent_crime FROM arrests_by_state_2005 a WHERE a.age = 'Total all ages'"
+					])
+			elsif params[:rank_crime] == "Property" 
+					rank = Arrests_2005.find_by_sql([
+						"SELECT distinct a.state, a.property_crime FROM arrests_by_state_2005 a WHERE a.age = 'Total all ages'"
+					])
 			else
-					@top10_drug2005 = Arrests_2005.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.drug_abuse_violations/s.est_pop)*100000 as drug_percap
-					FROM project_db_instance.arrests_by_state_2005 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2005'
-					GROUP BY drug_percap desc
-					LIMIT 10"]); 
-					@bottom10_drug2005 = Arrests_2005.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.drug_abuse_violations/s.est_pop)*100000 as drug_percap
-					FROM project_db_instance.arrests_by_state_2005 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2005'
-					GROUP BY drug_percap asc
-					LIMIT 10"]); 				
-
+					rank = Arrests_2005.find_by_sql([
+						"SELECT distinct a.state, a.drug_abuse_violations FROM arrests_by_state_2005 a WHERE a.age = 'Total all ages'"
+					])		
 			end			
 		when "2007"
-			if params[:ranking_crime] == "violent" 
-				if params[:rank] == "top" 
-					@top10_violent2007 = Arrests_2007.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.violent_crime/s.est_pop)*100000 as vio_percap
-					FROM project_db_instance.arrests_by_state_2007 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2007'
-					GROUP BY vio_percap desc
-					LIMIT 10"]); 
-				else
-					@bottom10_violent2007 = Arrests_2007.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.violent_crime/s.est_pop)*100000 as vio_percap
-					FROM project_db_instance.arrests_by_state_2007 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2007'
-					GROUP BY vio_percap asc
-					LIMIT 10"]);
-				end
-			elsif params[:ranking_crime] == "property" 
-					@top10_property2007 = Arrests_2007.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.property_crime/s.est_pop)*100000 as prop_percap
-					FROM project_db_instance.arrests_by_state_2007 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2007'
-					GROUP BY prop_percap desc
-					LIMIT 10"]); 
-					@bottom10_property2007 = Arrests_2007.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.property_crime/s.est_pop)*100000 as prop_percap
-					FROM project_db_instance.arrests_by_state_2007 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2007'
-					GROUP BY prop_percap asc
-					LIMIT 10"]); 
+			if params[:rank_crime] == "Violent" 
+					rank = Arrests_2007.find_by_sql([
+						"SELECT distinct a.state, a.violent_crime FROM arrests_by_state_2007 a WHERE a.age = 'Total all ages'"
+					])
+			elsif params[:rank_crime] == "Property" 
+					rank = Arrests_2007.find_by_sql([
+						"SELECT distinct a.state, a.property_crime FROM arrests_by_state_2007 a WHERE a.age = 'Total all ages'"
+					])
 			else
-					@top10_drug2007 = Arrests_2007.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.drug_abuse_violations/s.est_pop)*100000 as drug_percap
-					FROM project_db_instance.arrests_by_state_2007 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2007'
-					GROUP BY drug_percap desc
-					LIMIT 10"]); 
-					@bottom10_drug2007 = Arrests_2007.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.drug_abuse_violations/s.est_pop)*100000 as drug_percap
-					FROM project_db_instance.arrests_by_state_2007 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2007'
-					GROUP BY drug_percap asc
-					LIMIT 10"]); 				
-
-			end			
+					rank = Arrests_2007.find_by_sql([
+						"SELECT distinct a.state, a.drug_abuse_violations FROM arrests_by_state_2007 a WHERE a.age = 'Total all ages'"
+					])		
+			end					
 		when "2009"
-			if params[:ranking_crime] == "violent" 
-				if params[:rank] == "top" 
-					@top10_violent2009 = Arrests_2009.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.violent_crime/s.est_pop)*100000 as vio_percap
-					FROM project_db_instance.arrests_by_state_2009 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2009'
-					GROUP BY vio_percap desc
-					LIMIT 10"]); 
-				else
-					@bottom10_violent2009 = Arrests_2009.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.violent_crime/s.est_pop)*100000 as vio_percap
-					FROM project_db_instance.arrests_by_state_2009 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2009'
-					GROUP BY vio_percap asc
-					LIMIT 10"]);
-				end
-			elsif params[:ranking_crime] == "property" 
-					@top10_property2009 = Arrests_2009.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.property_crime/s.est_pop)*100000 as prop_percap
-					FROM project_db_instance.arrests_by_state_2009 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2009'
-					GROUP BY prop_percap desc
-					LIMIT 10"]); 
-					@bottom10_property2009 = Arrests_2009.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.property_crime/s.est_pop)*100000 as prop_percap
-					FROM project_db_instance.arrests_by_state_2009 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2009'
-					GROUP BY prop_percap asc
-					LIMIT 10"]); 
+			if params[:rank_crime] == "Violent" 
+					rank = Arrests_2009.find_by_sql([
+						"SELECT distinct a.state, a.violent_crime FROM arrests_by_state_2009 a WHERE a.age = 'Total all ages'"
+					])
+			elsif params[:rank_crime] == "Property" 
+					rank = Arrests_2009.find_by_sql([
+						"SELECT distinct a.state, a.property_crime FROM arrests_by_state_2009 a WHERE a.age = 'Total all ages'"
+					])
 			else
-					@top10_drug2009 = Arrests_2009.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.drug_abuse_violations/s.est_pop)*100000 as drug_percap
-					FROM project_db_instance.arrests_by_state_2009 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2009'
-					GROUP BY drug_percap desc
-					LIMIT 10"]); 
-					@bottom10_drug2009 = Arrests_2009.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.drug_abuse_violations/s.est_pop)*100000 as drug_percap
-					FROM project_db_instance.arrests_by_state_2009 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2009'
-					GROUP BY drug_percap asc
-					LIMIT 10"]); 				
-
+					rank = Arrests_2009.find_by_sql([
+						"SELECT distinct a.state, a.drug_abuse_violations FROM arrests_by_state_2009 a WHERE a.age = 'Total all ages'"
+					])		
 			end				
-		when "2011"
-			if params[:ranking_crime] == "violent" 
-				if params[:rank] == "top" 
-					@top10_violent2011 = Arrests_2011.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.violent_crime/s.est_pop)*100000 as vio_percap
-					FROM project_db_instance.arrests_by_state_2011 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2011'
-					GROUP BY vio_percap desc
-					LIMIT 10"]); 
-				else
-					@bottom10_violent2011 = Arrests_2011.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.violent_crime/s.est_pop)*100000 as vio_percap
-					FROM project_db_instance.arrests_by_state_2011 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2011'
-					GROUP BY vio_percap asc
-					LIMIT 10"]);
-				end
-			elsif params[:ranking_crime] == "property" 
-					@top10_property2011 = Arrests_2011.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.property_crime/s.est_pop)*100000 as prop_percap
-					FROM project_db_instance.arrests_by_state_2011 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2011'
-					GROUP BY prop_percap desc
-					LIMIT 10"]); 
-					@bottom10_property2011 = Arrests_2011.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.property_crime/s.est_pop)*100000 as prop_percap
-					FROM project_db_instance.arrests_by_state_2011 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2011'
-					GROUP BY prop_percap asc
-					LIMIT 10"]); 
+		when "2011"	
+			if params[:rank_crime] == "Violent" 
+					rank = Arrests_2011.find_by_sql([
+						"SELECT distinct a.state, a.violent_crime FROM arrests_by_state_2011 a WHERE a.age = 'Total all ages'"
+					])
+			elsif params[:rank_crime] == "Property" 
+					rank = Arrests_2011.find_by_sql([
+						"SELECT distinct a.state, a.property_crime FROM arrests_by_state_2011 a WHERE a.age = 'Total all ages'"
+					])
 			else
-					@top10_drug2011 = Arrests_2011.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.drug_abuse_violations/s.est_pop)*100000 as drug_percap
-					FROM project_db_instance.arrests_by_state_2011 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2011'
-					GROUP BY drug_percap desc
-					LIMIT 10"]); 
-					@bottom10_drug2011 = Arrests_2011.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.drug_abuse_violations/s.est_pop)*100000 as drug_percap
-					FROM project_db_instance.arrests_by_state_2011 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2011'
-					GROUP BY drug_percap asc
-					LIMIT 10"]); 				
-
+					rank = Arrests_2011.find_by_sql([
+						"SELECT distinct a.state, a.drug_abuse_violations FROM arrests_by_state_2011 a WHERE a.age = 'Total all ages'"
+					])		
+			end		
+		when "2012"		
+			if params[:rank_crime] == "Violent" 
+					rank = Arrests_2012.find_by_sql([
+						"SELECT distinct a.state, a.violent_crime FROM arrests_by_state_2012 a WHERE a.age = 'Total all ages'"
+					])
+			elsif params[:rank_crime] == "Property" 
+					rank = Arrests_2012.find_by_sql([
+						"SELECT distinct a.state, a.property_crime FROM arrests_by_state_2012 a WHERE a.age = 'Total all ages'"
+					])
+			else
+					rank = Arrests_2012.find_by_sql([
+						"SELECT distinct a.state, a.drug_abuse_violations FROM arrests_by_state_2012 a WHERE a.age = 'Total all ages'"
+					])		
 			end			
-		else
-			if params[:ranking_crime] == "violent" 
-				if params[:rank] == "top" 
-					@top10_violent2012 = Arrests_2012.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.violent_crime/s.est_pop)*100000 as vio_percap
-					FROM project_db_instance.arrests_by_state_2012 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2012'
-					GROUP BY vio_percap desc
-					LIMIT 10"]); 
-				else
-					@bottom10_violent2012 = Arrests_2012.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.violent_crime/s.est_pop)*100000 as vio_percap
-					FROM project_db_instance.arrests_by_state_2012 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2012'
-					GROUP BY vio_percap asc
-					LIMIT 10"]);
-				end
-			elsif params[:ranking_crime] == "property" 
-					@top10_property2012 = Arrests_2012.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.property_crime/s.est_pop)*100000 as prop_percap
-					FROM project_db_instance.arrests_by_state_2012 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2012'
-					GROUP BY prop_percap desc
-					LIMIT 10"]); 
-					@bottom10_property2012 = Arrests_2012.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.property_crime/s.est_pop)*100000 as prop_percap
-					FROM project_db_instance.arrests_by_state_2012 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2012'
-					GROUP BY prop_percap asc
-					LIMIT 10"]); 
-			else
-					@top10_drug2012 = Arrests_2012.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.drug_abuse_violations/s.est_pop)*100000 as drug_percap
-					FROM project_db_instance.arrests_by_state_2012 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2012'
-					GROUP BY drug_percap desc
-					LIMIT 10"]); 
-					@bottom10_drug2012 = Arrests_2012.find_by_sql(
-			  		["SELECT distinct s.name as state, (abs5.drug_abuse_violations/s.est_pop)*100000 as drug_percap
-					FROM project_db_instance.arrests_by_state_2012 abs5, project_db_instance.state s
-					WHERE abs5.age = 'Total all ages'
-					AND s.name= abs5.state
-					and s.year = '2012'
-					GROUP BY drug_percap asc
-					LIMIT 10"]); 				
-
-			end				
 		end
+
+		rank.collect { |a|
+			pop = States.find_by_sql(["SELECT est_pop FROM state WHERE state.year = ? AND state.name = ?",params[:rank_year], a.state]);
+			if params[:rank_crime] == "Violent" 
+				a.violent_crime = (a.violent_crime.to_f/pop.first.est_pop)*100000			
+			elsif params[:rank_crime] == "Property" 
+				a.property_crime = (a.property_crime.to_f/pop.first.est_pop)*100000		
+			else
+				a.drug_abuse_violations = (a.drug_abuse_violations.to_f/pop.first.est_pop)*100000
+			end 		
+		}
+
+		if params[:rank_crime]=="Violent"
+			if params[:hi_lo] == "Highest"
+				rank.sort_by!{|a| -a.violent_crime}
+			else
+				rank.sort_by!{|a| a.violent_crime}
+			end	
+			@final_rank = rank.take(10)				
+			render "_violent_rank_partial"
+		elsif params[:rank_crime]=="Property"
+			if params[:hi_lo] == "Highest"
+				rank.sort_by!{|a| -a.property_crime}
+			else
+				rank.sort_by!{|a| a.property_crime}
+			end		
+			@final_rank = rank.take(10)			
+			render "_property_rank_partial"
+		else
+			if params[:hi_lo] == "Highest"
+				rank.sort_by!{|a| -a.drug_abuse_violations}
+			else
+				rank.sort_by!{|a| a.drug_abuse_violations}
+			end	
+			@final_rank = rank.take(10)		
+			render "_drug_rank_partial"
+		end			
 	end
 
 

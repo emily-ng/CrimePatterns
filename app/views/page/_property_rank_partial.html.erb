@@ -1,0 +1,14 @@
+<h2>Rankings for <%=params[:hi_lo]%> <%=params[:rank_crime]%> Crime Rates in <%=params[:rank_year]%> </h2>
+
+
+<table>
+	<tr>
+		<th>State</th>
+		<th>Property Crime Per Capita</th>
+	</tr>
+	<% @final_rank.each do |f| %>
+	    <td><%= f.state %></td>
+	    	<td><%= f.property_crime%></td>
+	 </tr>
+	<% end %>
+</table>
