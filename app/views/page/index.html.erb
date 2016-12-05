@@ -3,7 +3,7 @@
 <p>Find me in app/views/page/index.html.erb</p>
 -->
 
-<h1>Search for drug and crime data related to a state! (Make this a dropdown)</h1>
+<h2>Search for drug and crime data related to a state!</h2>
 <br>
 <%= form_tag("/", method: "get") do %>
   <%= label_tag(:q, "Search for:") %>
@@ -29,8 +29,9 @@
 	<%= submit_tag("Submit") %>
 <% end %>
 
-<h2>Scatterplots</h2>
+<h2>Scatter Plots</h2>
 <%= form_tag("/", method: "get") do %>
+	<%= select_tag(:scatter_crime, options_for_select(["Violent","Property"]))%>
     <%= select_tag(:scatter_year, options_for_select([2005,2007,2009,2011,2012]))%>
   <%= submit_tag("Submit") %>
 <% end %>
