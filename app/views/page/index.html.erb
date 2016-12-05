@@ -30,6 +30,7 @@
 <% end %>
 
 <h2>Scatter Plots</h2>
+<h5> See if there's an association between Violent/Property Crime per Capita and Marijuana Crime per Capita for a given year! </h5>
 <%= form_tag("/", method: "get") do %>
 	<%= select_tag(:scatter_crime, options_for_select(["Violent","Property"]))%>
   <%= select_tag(:scatter_year, options_for_select([2005,2007,2009,2011,2012]))%>

@@ -1,5 +1,5 @@
 <h2>Scatter Plot for <%=params[:scatter_year]%></h2>
 
-<h4><center><%=params[:scatter_crime].capitalize%> Crime per Capita vs Marijuana Crime per Capita</center></h4>
+<h4><center><%=params[:scatter_crime].capitalize%> Crime per 100,000 Capita vs Marijuana Crime per 100,000 Capita</center></h4>
 
-<%= scatter_chart @final_scatter.pluck(:drug_abuse_violations, :violent_crime), xtitle: "Marijuana Violations Per Capita", ytitle: "Crime Per Capita" %>
+<%= scatter_chart @final_scatter.pluck(:drug_abuse_violations, :violent_crime), xtitle: "Marijuana Violations Per 100,000 Capita", ytitle: "Crime Per 100,000 Capita" %>
