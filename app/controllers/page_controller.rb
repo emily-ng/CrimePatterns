@@ -306,58 +306,129 @@ class PageController < ApplicationController
 			 scatter = Arrests_2005.find_by_sql([
 					 "SELECT distinct a.state, a.violent_crime, a.drug_abuse_violations FROM arrests_by_state_2005 a WHERE a.age = 'Total all ages'"
 					 ])
+       us_marijuana_possession = Drug_Violations.find_by_sql([
+           "SELECT distinct us_total FROM drug_violations WHERE da_violation = 'marijuana possession' AND year = '2005'"
+           ])
+        us_marijuana_sale = Drug_Violations.find_by_sql([
+           "SELECT distinct us_total FROM drug_violations WHERE da_violation = 'marijuana sale' AND year = '2005'"
+           ])
+        us_marijuana = (us_marijuana_possession.first.us_total + us_marijuana_sale.first.us_total)*0.01
 		  when "2007"
 			 scatter = Arrests_2007.find_by_sql([
 					 "SELECT distinct a.state, a.violent_crime, a.drug_abuse_violations FROM arrests_by_state_2007 a WHERE a.age = 'Total all ages'"
 					 ])			
+       us_marijuana_possession = Drug_Violations.find_by_sql([
+           "SELECT distinct us_total FROM drug_violations WHERE da_violation = 'marijuana possession' AND year = '2007'"
+           ])
+        us_marijuana_sale = Drug_Violations.find_by_sql([
+           "SELECT distinct us_total FROM drug_violations WHERE da_violation = 'marijuana sale' AND year = '2007'"
+           ])
+        us_marijuana = (us_marijuana_possession.first.us_total + us_marijuana_sale.first.us_total)*0.01
 		  when "2009"
 			 scatter = Arrests_2009.find_by_sql([
 					 "SELECT distinct a.state, a.violent_crime, a.drug_abuse_violations FROM arrests_by_state_2009 a WHERE a.age = 'Total all ages'"
 					 ])		
+        us_marijuana_possession = Drug_Violations.find_by_sql([
+           "SELECT distinct us_total FROM drug_violations WHERE da_violation = 'marijuana possession' AND year = '2009'"
+           ])
+        us_marijuana_sale = Drug_Violations.find_by_sql([
+           "SELECT distinct us_total FROM drug_violations WHERE da_violation = 'marijuana sale' AND year = '2009'"
+           ])
+        us_marijuana = (us_marijuana_possession.first.us_total + us_marijuana_sale.first.us_total)*0.01
 		  when "2011"
 			 scatter = Arrests_2011.find_by_sql([
 					 "SELECT distinct a.state, a.violent_crime, a.drug_abuse_violations FROM arrests_by_state_2011 a WHERE a.age = 'Total all ages'"
 					 ])
+       us_marijuana_possession = Drug_Violations.find_by_sql([
+           "SELECT distinct us_total FROM drug_violations WHERE da_violation = 'marijuana possession' AND year = '2011'"
+           ])
+        us_marijuana_sale = Drug_Violations.find_by_sql([
+           "SELECT distinct us_total FROM drug_violations WHERE da_violation = 'marijuana sale' AND year = '2011'"
+           ])
+        us_marijuana = (us_marijuana_possession.first.us_total + us_marijuana_sale.first.us_total)*0.01
 		  when "2012"
 			 scatter = Arrests_2012.find_by_sql([
 					 "SELECT distinct a.state, a.violent_crime, a.drug_abuse_violations FROM arrests_by_state_2012 a WHERE a.age = 'Total all ages'"
 					 ])
+       us_marijuana_possession = Drug_Violations.find_by_sql([
+           "SELECT distinct us_total FROM drug_violations WHERE da_violation = 'marijuana possession' AND year = '2012'"
+           ])
+        us_marijuana_sale = Drug_Violations.find_by_sql([
+           "SELECT distinct us_total FROM drug_violations WHERE da_violation = 'marijuana sale' AND year = '2012'"
+           ])
+        us_marijuana = (us_marijuana_possession.first.us_total + us_marijuana_sale.first.us_total)*0.01
 		  end
 		  scatter.collect { |a|
 			 pop = States.find_by_sql(["SELECT est_pop FROM state WHERE state.year = ? AND state.name = ?",params[:scatter_year], a.state]);
 			 	 a.violent_crime = (a.violent_crime.to_f/pop.first.est_pop)*100000				
-				  a.drug_abuse_violations = (a.drug_abuse_violations.to_f/pop.first.est_pop)*100000		
+				  a.drug_abuse_violations = ((a.drug_abuse_violations.to_f*us_marijuana)/pop.first.est_pop)*100000		
 		  }	
 		  @final_scatter = scatter
+      #Property crime 
     else   
       case params[:scatter_year]
       when "2005"
-       scatter = Arrests_2005.find_by_sql([
-           "SELECT distinct a.state, a.property_crime, a.drug_abuse_violations FROM arrests_by_state_2005 a WHERE a.age = 'Total all ages'"
+          scatter = Arrests_2005.find_by_sql([
+            "SELECT distinct a.state, a.property_crime, a.drug_abuse_violations FROM arrests_by_state_2005 a WHERE a.age = 'Total all ages'"
+            ])
+          us_marijuana_possession = Drug_Violations.find_by_sql([
+           "SELECT distinct us_total FROM drug_violations WHERE da_violation = 'marijuana possession' AND year = '2005'"
            ])
+          us_marijuana_sale = Drug_Violations.find_by_sql([
+           "SELECT distinct us_total FROM drug_violations WHERE da_violation = 'marijuana sale' AND year = '2005'"
+           ])
+          us_marijuana = (us_marijuana_possession.first.us_total + us_marijuana_sale.first.us_total)*0.01
       when "2007"
        scatter = Arrests_2007.find_by_sql([
            "SELECT distinct a.state, a.property_crime, a.drug_abuse_violations FROM arrests_by_state_2007 a WHERE a.age = 'Total all ages'"
-           ])     
+           ])
+        us_marijuana_possession = Drug_Violations.find_by_sql([
+           "SELECT distinct us_total FROM drug_violations WHERE da_violation = 'marijuana possession' AND year = '2007'"
+           ])
+        us_marijuana_sale = Drug_Violations.find_by_sql([
+           "SELECT distinct us_total FROM drug_violations WHERE da_violation = 'marijuana sale' AND year = '2007'"
+           ])
+        us_marijuana = (us_marijuana_possession.first.us_total + us_marijuana_sale.first.us_total)*0.01     
       when "2009"
        scatter = Arrests_2009.find_by_sql([
            "SELECT distinct a.state, a.property_crime, a.drug_abuse_violations FROM arrests_by_state_2009 a WHERE a.age = 'Total all ages'"
            ])   
+        us_marijuana_possession = Drug_Violations.find_by_sql([
+           "SELECT distinct us_total FROM drug_violations WHERE da_violation = 'marijuana possession' AND year = '2009'"
+           ])
+        us_marijuana_sale = Drug_Violations.find_by_sql([
+           "SELECT distinct us_total FROM drug_violations WHERE da_violation = 'marijuana sale' AND year = '2009'"
+           ])
+        us_marijuana = (us_marijuana_possession.first.us_total + us_marijuana_sale.first.us_total)*0.01
       when "2011"
        scatter = Arrests_2011.find_by_sql([
            "SELECT distinct a.state, a.property_crime, a.drug_abuse_violations FROM arrests_by_state_2011 a WHERE a.age = 'Total all ages'"
            ])
+       us_marijuana_possession = Drug_Violations.find_by_sql([
+           "SELECT distinct us_total FROM drug_violations WHERE da_violation = 'marijuana possession' AND year = '2011'"
+           ])
+        us_marijuana_sale = Drug_Violations.find_by_sql([
+           "SELECT distinct us_total FROM drug_violations WHERE da_violation = 'marijuana sale' AND year = '2011'"
+           ])
+        us_marijuana = (us_marijuana_possession.first.us_total + us_marijuana_sale.first.us_total)*0.01
       when "2012"
        scatter = Arrests_2012.find_by_sql([
            "SELECT distinct a.state, a.property_crime, a.drug_abuse_violations FROM arrests_by_state_2012 a WHERE a.age = 'Total all ages'"
            ])
+       us_marijuana_possession = Drug_Violations.find_by_sql([
+           "SELECT distinct us_total FROM drug_violations WHERE da_violation = 'marijuana possession' AND year = '2012'"
+           ])
+        us_marijuana_sale = Drug_Violations.find_by_sql([
+           "SELECT distinct us_total FROM drug_violations WHERE da_violation = 'marijuana sale' AND year = '2012'"
+           ])
+        us_marijuana = (us_marijuana_possession.first.us_total + us_marijuana_sale.first.us_total)*0.01
       end
-      scatter.collect { |a|
-       pop = States.find_by_sql(["SELECT est_pop FROM state WHERE state.year = ? AND state.name = ?",params[:scatter_year], a.state]);
-         a.violent_crime = (a.property_crime.to_f/pop.first.est_pop)*100000        
-          a.drug_abuse_violations = (a.drug_abuse_violations.to_f/pop.first.est_pop)*100000   
-      } 
-      @final_scatter = scatter
+          scatter.collect { |a|
+          pop = States.find_by_sql(["SELECT est_pop FROM state WHERE state.year = ? AND state.name = ?",params[:scatter_year], a.state]);
+            a.violent_crime = (a.property_crime.to_f/pop.first.est_pop)*100000        
+            a.drug_abuse_violations = ((a.drug_abuse_violations.to_f*us_marijuana)/pop.first.est_pop)*100000   
+          } 
+          @final_scatter = scatter
 	 end 
    render "_scatter_partial"
   end

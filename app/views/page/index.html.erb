@@ -32,7 +32,7 @@
 <h2>Scatter Plots</h2>
 <%= form_tag("/", method: "get") do %>
 	<%= select_tag(:scatter_crime, options_for_select(["Violent","Property"]))%>
-    <%= select_tag(:scatter_year, options_for_select([2005,2007,2009,2011,2012]))%>
+  <%= select_tag(:scatter_year, options_for_select([2005,2007,2009,2011,2012]))%>
   <%= submit_tag("Submit") %>
 <% end %>
 
