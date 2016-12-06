@@ -1,4 +1,4 @@
-<h2>Comparison of <%=params[:comparison_crime]%> crime betweeen <%=params[:state1].upcase%> and <%=params[:state2].upcase%> </h2>
+<h2><center>Comparison of <%=params[:comparison_crime]%> crime betweeen <%=params[:state1].upcase%> and <%=params[:state2].upcase%> </center></h2>
 
 <%= line_chart [
   {name: params[:state1], data: @compare1_hash},
