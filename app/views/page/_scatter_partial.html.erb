@@ -16,7 +16,7 @@
 <h4><center><span class="partial_header"><%=params[:scatter_crime].capitalize%> Crime</span> per 100,000 Capita vs Marijuana Crime per 100,000 Capita</center></h4>
 
 <%= scatter_chart @final_scatter.pluck(:drug_abuse_violations, :violent_crime), xtitle: "Marijuana Violations Per 100,000 Capita", ytitle: "Crime Per 100,000 Capita", height: "400px", width: "900px", library: {backgroundColor: "#27ae60"} %>
-
+	<span class= "text">Note: Shows the trend for the US in a particular year.</span>
 </div>
 </div>
 

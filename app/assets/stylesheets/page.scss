@@ -12,6 +12,17 @@ html, body {
   margin: 0;
 }
 
+select{
+  border-color: transparent;
+}
+input{
+  border:none;
+  border-radius: 0px;
+  color: #fff;
+  background-color: #888;
+  padding-left: 7px;
+  padding-right: 7px;
+}
 body {
   //background-image: url('http://wallpapercave.com/wp/h3u2qag.jpg');
   //background-repeat: no-repeat;
@@ -21,7 +32,7 @@ body {
 }
 
 h1{
- color: #2980b9;
+ color: #d35400;
  font-weight: bold;
  letter-spacing: 1px;
 }
