@@ -68,14 +68,16 @@ h1, h2, h3, h4{
 .partial_header{
   margin-bottom: 0px;
   color: #d35400;
-  font-weight: 300;
+  font-weight: 200;
   padding-left:5px;
   padding-right:5px;
 }
 
 .hi_lo{
   color: #5e21b2;
-  font-weight: bold;
+  font-weight: 200;
+  padding-left:3px;
+  padding-right:3px;
 }
 
 .home_button{
@@ -90,12 +92,14 @@ h1, h2, h3, h4{
 
 .rank_table{
   margin-top: 40px;
+  font-family: 'Open Sans', sans-serif;
   th{
     font-weight:200;
     text-align: center;
     font-size: 25px;
     color: #fff;
     padding-bottom:10px;
+    text-decoration : underline;
   }
   td{
     font-weight:200;
