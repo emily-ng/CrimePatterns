@@ -2,40 +2,70 @@
 <h1>Page#index</h1>
 <p>Find me in app/views/page/index.html.erb</p>
 -->
+<!DOCTYPE html>
+<body>
 
-<h2>Search for drug and crime data related to a state!</h2>
+<div class = "container">
+
+<div class = "row">
+  <div class = "col-md-offset-2 col-md-8 col-centered">
+<div id = "header">  
+<h1>Marijuana and Crime</h1>
+<h4>By Emily Ng and Michaela Murr</h4>
+</div>
+</div>
+
+</div>
+<div class = "row">
+<div class = "col-md-offset-2 col-md-8 col-centered console">
+
+<h4>Search for drug and crime data related to a state!</h4>
 <br>
+<div class = "dropdown">
 <%= form_tag("/", method: "get") do %>
   <%= label_tag(:q, "Search for:") %>
   <%= select_tag(:q, options_for_select(@s.group(:name).collect{|ss| [ss.name]}))%>
   <%= submit_tag("Submit") %>
 <% end %>
+</div>
 
-<h2>Compare specific crime rates between 2 states</h2>
+<div class = "dropdown">
+<h4>Compare specific crime rates between 2 states</h4>
 <%= form_tag("/", method: "get") do %>
   	<%= select_tag(:comparison_crime, options_for_select(["Violent","Property","Drug"]))%>
   	<%= select_tag(:state1, options_for_select(@s.group(:name).collect{|ss| [ss.name]}))%>
   	<%= select_tag(:state2, options_for_select(@s.group(:name).collect{|ss| [ss.name]}))%>
 	<%= submit_tag("Submit") %>
 <% end %>
+</div>
 
-<h2>Find the top 10 states (crime per 100,000 capita)</h2>
-<body><ul>Ex. States with the highest violent crime per capita in 2011 (Select: 2011, Violent, Highest)</ul>
-<ul>Ex. States with the lowest property crime per capita in 2009 (Select: 2009, Property, Lowest)</ul></body>
+<div class = "dropdown">
+<h4>Find the top 10 states (crime per 100,000 capita)</h4>
+<h5 class = "text">Ex. States with the highest violent crime per capita in 2011 (Select: 2011, Violent, Highest)</ul>
+<ul>Ex. States with the lowest property crime per capita in 2009 (Select: 2009, Property, Lowest)</h5>
 <%= form_tag("/", method: "get") do %>
   	<%= select_tag(:rank_year, options_for_select([2005,2007,2009,2011,2012]))%>
   	<%= select_tag(:rank_crime, options_for_select(["Violent","Property","Drug"]))%>
   	<%= select_tag(:hi_lo, options_for_select(["Highest","Lowest"]))%>
 	<%= submit_tag("Submit") %>
 <% end %>
+</div>
 
-<h2>Scatter Plots</h2>
-<h5> See if there's an association between Violent/Property Crime per Capita and Marijuana Crime per Capita for a given year! </h5>
+<div class = "dropdown">
+<h4>Scatter Plots</h4>
+<h5 class = "text"> See if there's an association between Violent/Property Crime per Capita and Marijuana Crime per Capita for a given year! </h5>
 <%= form_tag("/", method: "get") do %>
 	<%= select_tag(:scatter_crime, options_for_select(["Violent","Property"]))%>
   <%= select_tag(:scatter_year, options_for_select([2005,2007,2009,2011,2012]))%>
   <%= submit_tag("Submit") %>
-<% end %>
 
+<% end %>
+</div>
+
+</div>
+</div>
+</div>
+</body>
+</html>
 
 

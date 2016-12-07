@@ -1,14 +1,36 @@
-<h2>Rankings for <%=params[:hi_lo]%> <%=params[:rank_crime]%> Crime Rates in <%=params[:rank_year]%> </h2>
+<div class = "container">
 
+<div class = "row">
+	<div class="col-md-1">
+		<%=link_to root_path, class: 'btn back_button' do%>
+			<span class = 'btn-default glyphicon glyphicon-home home_button'></span>
+		<%end%>
+	</div>
+  <div class = "col-md-11 col-centered">
+
+<h2>Rankings for <span class = "hi_lo"><%=params[:hi_lo]%></span><span class ="partial_header"><%=params[:rank_crime]%> Crime</span> Rates in <span class ="partial_header"><%=params[:rank_year]%></span></h2>
+</div>
+</div>
+
+
+<div class = "row">
+  <div class = "col-md-offset-4 col-md-8 col-centered rank_table">
 
 <table>
 	<tr>
-		<th>State</th>
-		<th>Violent Crime Per Capita</th>
+		<th class = "right_pad">State</th>
+		<th>Arrests Per 100,000 Capita</th>
 	</tr>
-	<% @final_rank.each do |f| %>
-	    <td><%= f.state %></td>
+	<span class = "hide_index"><%=index=0%></span>
+	<% @final_rank.each do |f| %>	
+	    <td class = "right_pad"><%=index = index+1%>. <%=f.state %></td>
 	    	<td><%= f.violent_crime%></td>
 	 </tr>
-	<% end %>
+	<%end%>
 </table>
+
+</div>
+</div>
+
+
+</div>

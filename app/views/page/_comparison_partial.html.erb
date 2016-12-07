@@ -1,7 +1,33 @@
-<h2>Comparison of <%=params[:comparison_crime]%> crime betweeen <%=params[:state1].upcase%> and <%=params[:state2].upcase%> </h2>
+<div class = "container">
 
+<div class = "row">
+	<div class="col-md-1">
+		<%=link_to root_path, class: 'btn back_button' do%>
+			<span class = 'btn-default glyphicon glyphicon-home home_button'></span>
+		<%end%>
+	</div>
+  <div class = "col-md-11 col-centered">
+<h2 class= "">Comparison of <span class ="partial_header"><%=params[:comparison_crime]%> Crime</span> betweeen <span class ="partial_header"> <%=params[:state1].upcase%></span> and <span class ="partial_header"><%=params[:state2].upcase%></span> </h2>
+</div>
+
+<div class = "row">
+  <div class = "col-md-offset-1 col-md-11 col-centered">
 <%= line_chart [
   {name: params[:state1], data: @compare1_hash},
   {name: params[:state2], data: @compare2_hash}
   ], 
-  min: 0, xtitle: "Year", ytitle: "Per Capita (per 100,000)", height: "600px", width: "1200px" %>
+  min: 0, xtitle: "Year", ytitle: "Per Capita (per 100,000)", height: "500px", width:"800px", library: {backgroundColor: "#27ae60"} %>
+</div>
+</div>
+
+<div class = "row">
+	  <div class = "col-md-offset-2 col-md-8 col-centered">
+<span class= "text">
+<ul><b>Violent crime:</b> murder and non-negligent manslaughter, forcible rape, robbery, and aggravated assault</ul>
+<ul><b>Property crime:</b> burglary, larceny-theft, motor vehicle theft, and arson</ul>
+<ul><b>Drug abuse violations:</b> sale and possession of heroin or cocaine and their derivatives, synthetic or manufactured drugs, marijuana, and other dangerous nonnarcotic drugs</ul>
+</span>
+</div>
+</div>
+
+</div>

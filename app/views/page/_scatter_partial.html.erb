@@ -1,5 +1,23 @@
-<h2>Scatter Plot for <%=params[:scatter_year]%></h2>
+<div class = "container">
 
-<h4><center><%=params[:scatter_crime].capitalize%> Crime per 100,000 Capita vs Marijuana Crime per 100,000 Capita</center></h4>
+<div class = "row">
+	<div class="col-md-1">
+		<%=link_to root_path, class: 'btn back_button' do%>
+			<span class = 'btn-default glyphicon glyphicon-home home_button'></span>
+		<%end%>
+	</div>
+  <div class = "col-md-11 col-centered">
+<h2>Scatter Plot for <span class="partial_header"><%=params[:scatter_year]%></span></h2>
+</div>
+</div>
 
-<%= scatter_chart @final_scatter.pluck(:drug_abuse_violations, :violent_crime), xtitle: "Marijuana Violations Per 100,000 Capita", ytitle: "Crime Per 100,000 Capita" %>
+<div class = "row">
+  <div class = "col-md-offset-1 col-md-11 col-centered">
+<h4><center><span class="partial_header"><%=params[:scatter_crime].capitalize%> Crime</span> per 100,000 Capita vs Marijuana Crime per 100,000 Capita</center></h4>
+
+<%= scatter_chart @final_scatter.pluck(:drug_abuse_violations, :violent_crime), xtitle: "Marijuana Violations Per 100,000 Capita", ytitle: "Crime Per 100,000 Capita", height: "400px", width: "900px", library: {backgroundColor: "#27ae60"} %>
+
+</div>
+</div>
+
+</div>
