@@ -2,25 +2,7 @@
 #   gem 'mysql2'
 #
 
-#default: 
-#  adapter: mysql2
-#  encoding: utf8
-#  database: project_db_instance
-#  username: awsmaster
-#  password: fall2016
-#  host: cs336project.cqq1elaq7y1g.us-east-1.rds.amazonaws.com
-#  port: 3306
-#  pool: 5
-#  timeout: 5000
-
-#development:
-#  adapter: mysql2
-#  encoding: utf8
-#  database: <%= ENV['project_db_instance'] %>
-#  username: <%= ENV['awsmaster'] %>
-#  password: <%= ENV['fall2016'] %>
-#  host: <%= ENV['cs336project.cqq1elaq7y1g.us-east-1.rds.amazonaws.com'] %>
-#  port: <%= ENV['3306'] %>
+#NOTE: host does not exist anymore.
 
  development:
   adapter: mysql2
